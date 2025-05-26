@@ -1,0 +1,131 @@
+{
+  "episode": 2,
+  "game": "tw-cooking-recipe5+take4+cook+cut+go9-WEbyFZqrS7pQF1gM",
+  "difficulty": "very_hard",
+  "model_temperature": 0.3,
+  "max_steps": 45,
+  "agent": "retrieval",
+  "duration_seconds": 25.05,
+  "moves": 7,
+  "max_score": 11,
+  "won": false,
+  "lost": true,
+  "score": 19,
+  "steps_taken": 10,
+  "trace": [
+    {
+      "step": 1,
+      "action": "take raw chicken leg",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou see an opened fridge. The fridge contains a raw chicken leg, a cilantro, a raw chicken wing, a raw egg, a parsley and some milk. You see an oven. You can see a table. You see a knife on the table. You can see a counter. On the counter you can see a banana, a raw purple potato, a red hot pepper and a cookbook. You see a stove. But there is nothing on it.\n\nThere is an open sliding patio door leading east. There is an open plain door leading north. There is an exit to the west. Don't worry, there is no door.\n",
+      "reasoning": "I need to gather all the ingredients for the recipe, and the next ingredient I need is the raw chicken leg from the fridge.",
+      "feedback_after_action": "You take the chicken leg from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 3654,
+      "tokens_prompt": 3610,
+      "tokens_completion": 44
+    },
+    {
+      "step": 2,
+      "action": "go north",
+      "observation_before": "You take the chicken leg from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to check the cookbook in the kitchen for the recipe to know how to prepare the meal. The kitchen is likely where I can find the cookbook.",
+      "feedback_after_action": "\n-= Pantry =-\nYou've just walked into a pantry.\n\nYou see a shelf. But there is nothing on it.\n\nThere is an open plain door leading south.\n\n\n",
+      "score_count": 2,
+      "tokens_total": 1800,
+      "tokens_prompt": 1753,
+      "tokens_completion": 47
+    },
+    {
+      "step": 3,
+      "action": "go south",
+      "observation_before": "\n-= Pantry =-\nYou've just walked into a pantry.\n\nYou see a shelf. But there is nothing on it.\n\nThere is an open plain door leading south.\n\n\n",
+      "reasoning": "I need to return to the kitchen to find the cookbook and check the recipe for cooking the chicken leg. The pantry does not have what I need, and I have previously found the kitchen to contain the cookbook.",
+      "feedback_after_action": "\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou see an opened fridge. The fridge contains a cilantro, a raw chicken wing, a raw egg, a parsley and some milk. You see an oven. You can see a table. You see a knife on the table. You can see a counter. On the counter you can see a banana, a raw purple potato, a red hot pepper and a cookbook. You see a stove. But there is nothing on it.\n\nThere is an open sliding patio door leading east. There is an open plain door leading north. There is an exit to the west. Don't worry, there is no door.\n\n\n",
+      "score_count": 3,
+      "tokens_total": 2174,
+      "tokens_prompt": 2116,
+      "tokens_completion": 58
+    },
+    {
+      "step": 4,
+      "action": "chop cilantro with knife",
+      "observation_before": "\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou see an opened fridge. The fridge contains a cilantro, a raw chicken wing, a raw egg, a parsley and some milk. You see an oven. You can see a table. You see a knife on the table. You can see a counter. On the counter you can see a banana, a raw purple potato, a red hot pepper and a cookbook. You see a stove. But there is nothing on it.\n\nThere is an open sliding patio door leading east. There is an open plain door leading north. There is an exit to the west. Don't worry, there is no door.\n\n\n",
+      "reasoning": "I need to chop the cilantro as per the recipe instructions. I have the cilantro in the fridge, so I will take it first and then chop it.",
+      "feedback_after_action": "You need to take the cilantro first.\n\n",
+      "score_count": 4,
+      "tokens_total": 3205,
+      "tokens_prompt": 3147,
+      "tokens_completion": 58
+    },
+    {
+      "step": 5,
+      "action": "take cilantro",
+      "observation_before": "You need to take the cilantro first.\n\n",
+      "reasoning": "I need to take the cilantro from the fridge before I can chop it. This is a necessary step to prepare the meal according to the recipe.",
+      "feedback_after_action": "You take the cilantro from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 6,
+      "tokens_total": 2275,
+      "tokens_prompt": 2229,
+      "tokens_completion": 46
+    },
+    {
+      "step": 6,
+      "action": "chop cilantro with knife",
+      "observation_before": "You take the cilantro from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "Now that I have the cilantro, I can chop it using the knife on the table. This is the next step in preparing the meal according to the recipe.",
+      "feedback_after_action": "You need to take the knife first.\n\n",
+      "score_count": 8,
+      "tokens_total": 2274,
+      "tokens_prompt": 2215,
+      "tokens_completion": 59
+    },
+    {
+      "step": 7,
+      "action": "take knife",
+      "observation_before": "You need to take the knife first.\n\n",
+      "reasoning": "I need to take the knife from the table before I can chop the cilantro. This is a necessary step to proceed with the meal preparation.",
+      "feedback_after_action": "You take the knife from the table.\n\n\n",
+      "score_count": 10,
+      "tokens_total": 2295,
+      "tokens_prompt": 2251,
+      "tokens_completion": 44
+    },
+    {
+      "step": 8,
+      "action": "chop cilantro with knife",
+      "observation_before": "You take the knife from the table.\n\n\n",
+      "reasoning": "Now that I have the knife, I can chop the cilantro. This is the next step in preparing the meal according to the recipe.",
+      "feedback_after_action": "You chop the cilantro.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 13,
+      "tokens_total": 2359,
+      "tokens_prompt": 2305,
+      "tokens_completion": 54
+    },
+    {
+      "step": 9,
+      "action": "take raw chicken leg",
+      "observation_before": "You chop the cilantro.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "Next, I need to take the raw chicken leg from my inventory to cook it. This is essential for preparing the meal according to the recipe.",
+      "feedback_after_action": "You already have that.\n\n\n",
+      "score_count": 16,
+      "tokens_total": 2483,
+      "tokens_prompt": 2436,
+      "tokens_completion": 47
+    },
+    {
+      "step": 10,
+      "action": "cook raw chicken leg with stove",
+      "observation_before": "You already have that.\n\n\n",
+      "reasoning": "I have the chopped cilantro and the raw chicken leg ready. Now I need to cook the chicken leg using the stove, as it is the appropriate appliance for frying the chicken leg.",
+      "feedback_after_action": "You fried the chicken leg.\n\n\n\n                                                      *** You lost! ***\n\nYou scored 3 out of a possible 11, in 10 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 19,
+      "tokens_total": 2532,
+      "tokens_prompt": 2471,
+      "tokens_completion": 61
+    }
+  ],
+  "total_tokens": 25051,
+  "prompt_tokens": 24533,
+  "completion_tokens": 518,
+  "avg_tokens_per_step": 2277.36
+}

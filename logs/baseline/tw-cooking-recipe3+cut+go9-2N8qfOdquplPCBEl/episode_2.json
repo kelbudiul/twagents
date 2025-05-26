@@ -1,0 +1,120 @@
+{
+  "episode": 2,
+  "game": "tw-cooking-recipe3+cut+go9-2N8qfOdquplPCBEl",
+  "difficulty": "easy",
+  "model_temperature": 0.3,
+  "max_steps": 20,
+  "agent": "baseline",
+  "duration_seconds": 18.59,
+  "moves": 5,
+  "max_score": 4,
+  "won": false,
+  "lost": true,
+  "score": 11,
+  "steps_taken": 9,
+  "trace": [
+    {
+      "step": 1,
+      "action": "examine cookbook",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou see an opened fridge. The fridge contains a white onion, a block of cheese, a yellow bell pepper, a red onion, a cilantro and some water. You can see an oven. You see a table. On the table you see a cookbook and a knife. You see a counter. You see a raw red potato on the counter. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. You don't like doors? Why not try going south, that entranceway is not blocked by one.\n",
+      "reasoning": "I need to check the cookbook in the kitchen to find the recipe for the meal I want to prepare. This will help me understand what ingredients I need to use and how to cook them.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  chicken breast\n  green bell pepper\n  red tuna\n\nDirections:\n  grill the chicken breast\n  slice the green bell pepper\n  grill the green bell pepper\n  slice the red tuna\n  fry the red tuna\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1800,
+      "tokens_prompt": 1743,
+      "tokens_completion": 57
+    },
+    {
+      "step": 2,
+      "action": "slice grilled green bell pepper with knife",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  chicken breast\n  green bell pepper\n  red tuna\n\nDirections:\n  grill the chicken breast\n  slice the green bell pepper\n  grill the green bell pepper\n  slice the red tuna\n  fry the red tuna\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to slice the green bell pepper for the recipe, and I already have a grilled green bell pepper in my inventory. Slicing it will help me move forward in preparing the meal.",
+      "feedback_after_action": "You need to take the knife first.\n\n",
+      "score_count": 0,
+      "tokens_total": 1556,
+      "tokens_prompt": 1489,
+      "tokens_completion": 67
+    },
+    {
+      "step": 3,
+      "action": "take knife",
+      "observation_before": "You need to take the knife first.\n\n",
+      "reasoning": "I need a knife to slice the grilled green bell pepper, which is a step in preparing the meal according to the recipe. I will take the knife to proceed with the slicing.",
+      "feedback_after_action": "You take the knife from the table.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1551,
+      "tokens_prompt": 1499,
+      "tokens_completion": 52
+    },
+    {
+      "step": 4,
+      "action": "slice grilled green bell pepper with knife",
+      "observation_before": "You take the knife from the table.\n\n\n",
+      "reasoning": "Now that I have the knife, I can slice the grilled green bell pepper, which is necessary for the recipe I found in the cookbook. This will help me move forward in preparing the meal.",
+      "feedback_after_action": "You slice the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 1645,
+      "tokens_prompt": 1577,
+      "tokens_completion": 68
+    },
+    {
+      "step": 5,
+      "action": "slice fried red tuna with knife",
+      "observation_before": "You slice the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "Next, I need to slice the red tuna as per the recipe. I already have the fried red tuna in my inventory, so I will slice it to prepare for the meal.",
+      "feedback_after_action": "You slice the red tuna.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 1755,
+      "tokens_prompt": 1692,
+      "tokens_completion": 63
+    },
+    {
+      "step": 6,
+      "action": "cook sliced grilled green bell pepper with BBQ",
+      "observation_before": "You slice the red tuna.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to grill the sliced grilled green bell pepper as per the recipe. Since I have already sliced it, I can now proceed to grill it to complete that step in the meal preparation.",
+      "feedback_after_action": "You can't see any such thing.\n",
+      "score_count": 5,
+      "tokens_total": 1856,
+      "tokens_prompt": 1790,
+      "tokens_completion": 66
+    },
+    {
+      "step": 7,
+      "action": "cook sliced green bell pepper with BBQ",
+      "observation_before": "You can't see any such thing.\n",
+      "reasoning": "I need to grill the green bell pepper, but I mistakenly tried to grill the sliced version. Instead, I should grill the sliced green bell pepper that I have in my inventory. This is the next step in the recipe.",
+      "feedback_after_action": "You can't see any such thing.\n",
+      "score_count": 7,
+      "tokens_total": 1947,
+      "tokens_prompt": 1875,
+      "tokens_completion": 72
+    },
+    {
+      "step": 8,
+      "action": "cook grilled chicken breast with BBQ",
+      "observation_before": "You can't see any such thing.\n",
+      "reasoning": "I need to grill the chicken breast according to the recipe. I already have a grilled chicken breast in my inventory, so I will use it as is without cooking it again. This will allow me to move forward in preparing the meal.",
+      "feedback_after_action": "You can't see any such thing.\n",
+      "score_count": 9,
+      "tokens_total": 2047,
+      "tokens_prompt": 1974,
+      "tokens_completion": 73
+    },
+    {
+      "step": 9,
+      "action": "cook sliced fried red tuna with stove",
+      "observation_before": "You can't see any such thing.\n",
+      "reasoning": "I need to grill the sliced green bell pepper, but I can't seem to find the BBQ. Instead, I will check my inventory to see if I have the necessary items to proceed with the next step of the recipe, which is to fry the sliced red tuna.",
+      "feedback_after_action": "You burned the red tuna!\n\n\n\n                                                      *** You lost! ***\n\nYou scored 2 out of a possible 4, in 6 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 11,
+      "tokens_total": 2153,
+      "tokens_prompt": 2073,
+      "tokens_completion": 80
+    }
+  ],
+  "total_tokens": 16310,
+  "prompt_tokens": 15712,
+  "completion_tokens": 598,
+  "avg_tokens_per_step": 1631.0
+}

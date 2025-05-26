@@ -1,0 +1,87 @@
+{
+  "episode": 2,
+  "game": "tw-cooking-recipe3+take3+go9-JeZQSLxqCWBDtXq5",
+  "difficulty": "hard",
+  "model_temperature": 0.3,
+  "max_steps": 40,
+  "agent": "retrieval",
+  "duration_seconds": 12.76,
+  "moves": 5,
+  "max_score": 5,
+  "won": false,
+  "lost": true,
+  "score": 7,
+  "steps_taken": 6,
+  "trace": [
+    {
+      "step": 1,
+      "action": "take raw chicken breast",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Pantry =-\nYou're now in the pantry.\n\nYou can see a shelf. On the shelf you see some vegetable oil and some olive oil.\n\nThere is an open frosted-glass door leading south.\n",
+      "reasoning": "I need to gather ingredients to cook a meal. The fridge contains a raw chicken breast, which is a good option to start with for cooking. I will take the raw chicken breast from the fridge.",
+      "feedback_after_action": "Which do you mean, the vegetable oil or the olive oil?\n",
+      "score_count": 0,
+      "tokens_total": 3070,
+      "tokens_prompt": 3012,
+      "tokens_completion": 58
+    },
+    {
+      "step": 2,
+      "action": "take vegetable oil",
+      "observation_before": "Which do you mean, the vegetable oil or the olive oil?\n",
+      "reasoning": "I need to gather ingredients to cook a meal. The pantry contains both vegetable oil and olive oil. Since I previously took the vegetable oil successfully, I will take the vegetable oil from the shelf to use for cooking.",
+      "feedback_after_action": "You take the vegetable oil from the shelf.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2202,
+      "tokens_prompt": 2141,
+      "tokens_completion": 61
+    },
+    {
+      "step": 3,
+      "action": "go south",
+      "observation_before": "You take the vegetable oil from the shelf.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to check the cookbook in the kitchen for a recipe to cook a meal. Since I have already taken the vegetable oil and I am currently in the pantry, I will move south to the kitchen where the cookbook is located.",
+      "feedback_after_action": "\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou see a fridge. The fridge contains a chopped roasted red tuna, a red bell pepper, a raw chicken breast and a raw pork chop. You can see an oven. You see a table. But there is nothing on it. You see a counter. You see a cookbook on the counter. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. There is an open sliding patio door leading west. You need an exit without a door? You should try going east.\n\n\n",
+      "score_count": 2,
+      "tokens_total": 2449,
+      "tokens_prompt": 2387,
+      "tokens_completion": 62
+    },
+    {
+      "step": 4,
+      "action": "examine cookbook",
+      "observation_before": "\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou see a fridge. The fridge contains a chopped roasted red tuna, a red bell pepper, a raw chicken breast and a raw pork chop. You can see an oven. You see a table. But there is nothing on it. You see a counter. You see a cookbook on the counter. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. There is an open sliding patio door leading west. You need an exit without a door? You should try going east.\n\n\n",
+      "reasoning": "I need to check the cookbook on the counter to find a recipe for cooking a meal. This will help me understand what ingredients and cooking methods are required.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  cilantro\n  red tuna\n  vegetable oil\n\nDirections:\n  slice the cilantro\n  chop the red tuna\n  roast the red tuna\n  prepare meal\n\n\n\n",
+      "score_count": 3,
+      "tokens_total": 3114,
+      "tokens_prompt": 3064,
+      "tokens_completion": 50
+    },
+    {
+      "step": 5,
+      "action": "take chopped roasted red tuna",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  cilantro\n  red tuna\n  vegetable oil\n\nDirections:\n  slice the cilantro\n  chop the red tuna\n  roast the red tuna\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to gather the required ingredients for the recipe. The recipe calls for cilantro, which I need to slice. However, I don't see any cilantro in the kitchen or pantry based on previous observations. I will check the fridge for the red tuna instead, as it is already present there.",
+      "feedback_after_action": "You take the red tuna from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 5,
+      "tokens_total": 2818,
+      "tokens_prompt": 2740,
+      "tokens_completion": 78
+    },
+    {
+      "step": 6,
+      "action": "cook chopped roasted red tuna with oven",
+      "observation_before": "You take the red tuna from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have gathered the chopped roasted red tuna and the vegetable oil, which are required for the recipe. I will now roast the red tuna using the oven, as per the cooking instructions.",
+      "feedback_after_action": "You burned the red tuna!\n\n\n\n                                                      *** You lost! ***\n\nYou scored 2 out of a possible 5, in 5 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 7,
+      "tokens_total": 2645,
+      "tokens_prompt": 2582,
+      "tokens_completion": 63
+    }
+  ],
+  "total_tokens": 16298,
+  "prompt_tokens": 15926,
+  "completion_tokens": 372,
+  "avg_tokens_per_step": 2328.29
+}

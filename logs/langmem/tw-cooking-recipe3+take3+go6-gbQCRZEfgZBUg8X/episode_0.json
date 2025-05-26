@@ -1,0 +1,109 @@
+{
+  "episode": 0,
+  "game": "tw-cooking-recipe3+take3+go6-gbQCRZEfgZBUg8X",
+  "difficulty": "hard",
+  "model_temperature": 0.3,
+  "max_steps": 40,
+  "agent": "langmem",
+  "duration_seconds": 64.85,
+  "moves": 8,
+  "max_score": 5,
+  "won": true,
+  "lost": false,
+  "score": 17,
+  "steps_taken": 8,
+  "trace": [
+    {
+      "step": 1,
+      "action": "examine cookbook",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou can see an opened fridge, which looks conventional, in the room. The fridge contains a diced lettuce. You see an oven. You see a table. You see a cookbook on the table. You see a counter. But there is nothing on it. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. There is an exit to the west. Don't worry, there is no door.\n",
+      "reasoning": "I need to check the cookbook for a recipe to cook a delicious meal.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  lettuce\n  peanut oil\n  salt\n\nDirections:\n  dice the lettuce\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2227,
+      "tokens_prompt": 2193,
+      "tokens_completion": 34
+    },
+    {
+      "step": 2,
+      "action": "go north",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  lettuce\n  peanut oil\n  salt\n\nDirections:\n  dice the lettuce\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to gather the ingredients for the recipe, starting with the lettuce, so I will explore the kitchen.",
+      "feedback_after_action": "\n-= Pantry =-\nYou've entered a pantry.\n\nYou see a shelf. You see a salt, some peanut oil and some olive oil on the shelf.\n\nThere is an open frosted-glass door leading south.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1961,
+      "tokens_prompt": 1923,
+      "tokens_completion": 38
+    },
+    {
+      "step": 3,
+      "action": "take peanut oil",
+      "observation_before": "\n-= Pantry =-\nYou've entered a pantry.\n\nYou see a shelf. You see a salt, some peanut oil and some olive oil on the shelf.\n\nThere is an open frosted-glass door leading south.\n\n\n",
+      "reasoning": "I need to gather the ingredients for the recipe, starting with the salt.",
+      "feedback_after_action": "You take the peanut oil from the shelf.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2124,
+      "tokens_prompt": 2043,
+      "tokens_completion": 81
+    },
+    {
+      "step": 4,
+      "action": "take salt",
+      "observation_before": "You take the peanut oil from the shelf.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I still need to gather the salt for the recipe, so I will take it from the shelf.",
+      "feedback_after_action": "You take the salt from the shelf.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 2233,
+      "tokens_prompt": 2197,
+      "tokens_completion": 36
+    },
+    {
+      "step": 5,
+      "action": "go south",
+      "observation_before": "You take the salt from the shelf.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have gathered the salt and peanut oil, but I still need to find the lettuce. I will go back to the kitchen to search for it.",
+      "feedback_after_action": "\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou can see an opened fridge, which looks conventional, in the room. The fridge contains a diced lettuce. You see an oven. You see a table. You see a cookbook on the table. You see a counter. But there is nothing on it. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. There is an exit to the west. Don't worry, there is no door.\n\n\n",
+      "score_count": 5,
+      "tokens_total": 2366,
+      "tokens_prompt": 2320,
+      "tokens_completion": 46
+    },
+    {
+      "step": 6,
+      "action": "take diced lettuce",
+      "observation_before": "\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou can see an opened fridge, which looks conventional, in the room. The fridge contains a diced lettuce. You see an oven. You see a table. You see a cookbook on the table. You see a counter. But there is nothing on it. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. There is an exit to the west. Don't worry, there is no door.\n\n\n",
+      "reasoning": "I need to take the diced lettuce from the fridge to complete the recipe ingredients.",
+      "feedback_after_action": "You take the lettuce from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 8,
+      "tokens_total": 2655,
+      "tokens_prompt": 2621,
+      "tokens_completion": 34
+    },
+    {
+      "step": 7,
+      "action": "prepare meal",
+      "observation_before": "You take the lettuce from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have gathered all the ingredients: diced lettuce, salt, and peanut oil. Now I can prepare the meal as per the recipe.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 12,
+      "tokens_total": 2706,
+      "tokens_prompt": 2664,
+      "tokens_completion": 42
+    },
+    {
+      "step": 8,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have prepared a meal and now I can eat it to satisfy my hunger and complete the game goal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 5 out of a possible 5, in 9 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 17,
+      "tokens_total": 2816,
+      "tokens_prompt": 2779,
+      "tokens_completion": 37
+    }
+  ],
+  "total_tokens": 19088,
+  "prompt_tokens": 18740,
+  "completion_tokens": 348,
+  "avg_tokens_per_step": 2120.89
+}

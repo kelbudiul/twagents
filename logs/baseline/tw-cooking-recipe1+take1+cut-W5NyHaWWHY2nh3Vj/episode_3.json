@@ -1,0 +1,153 @@
+{
+  "episode": 3,
+  "game": "tw-cooking-recipe1+take1+cut-W5NyHaWWHY2nh3Vj",
+  "difficulty": "easy",
+  "model_temperature": 0.3,
+  "max_steps": 20,
+  "agent": "baseline",
+  "duration_seconds": 21.27,
+  "moves": 5,
+  "max_score": 4,
+  "won": false,
+  "lost": true,
+  "score": 7,
+  "steps_taken": 12,
+  "trace": [
+    {
+      "step": 1,
+      "action": "take cookbook",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou're now in the kitchen.\n\nAn open fridge, which looks conventional, is in the room. The fridge contains a roasted block of cheese, a red onion and an orange bell pepper. You can see a closed oven in the room. You see a table. On the table you can see a knife. You see a counter. On the counter you see a green apple and a cookbook. You see a stove. But there is nothing on it.\n\n\n",
+      "reasoning": "I need to check the recipe in the cookbook to know what ingredients I need for the meal. Therefore, I will take the cookbook from the counter.",
+      "feedback_after_action": "You take the cookbook from the counter.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1726,
+      "tokens_prompt": 1679,
+      "tokens_completion": 47
+    },
+    {
+      "step": 2,
+      "action": "examine cookbook",
+      "observation_before": "You take the cookbook from the counter.\n\n\n",
+      "reasoning": "I need to find out what recipe is in the cookbook so that I can gather the necessary ingredients and prepare the meal. I will examine the cookbook now.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  block of cheese\n\nDirections:\n  dice the block of cheese\n  roast the block of cheese\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1326,
+      "tokens_prompt": 1276,
+      "tokens_completion": 50
+    },
+    {
+      "step": 3,
+      "action": "go north",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  block of cheese\n\nDirections:\n  dice the block of cheese\n  roast the block of cheese\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to find the block of cheese to follow the recipe. I will explore the kitchen to see if I can find the cheese.",
+      "feedback_after_action": "You can't go that way.\n\n",
+      "score_count": 0,
+      "tokens_total": 1512,
+      "tokens_prompt": 1469,
+      "tokens_completion": 43
+    },
+    {
+      "step": 4,
+      "action": "go east",
+      "observation_before": "You can't go that way.\n\n",
+      "reasoning": "Since I cannot go north, I will try moving in a different direction to explore and find the block of cheese. I will go east to see if there are any ingredients in that direction.",
+      "feedback_after_action": "You can't go that way.\n\n",
+      "score_count": 0,
+      "tokens_total": 1526,
+      "tokens_prompt": 1472,
+      "tokens_completion": 54
+    },
+    {
+      "step": 5,
+      "action": "go south",
+      "observation_before": "You can't go that way.\n\n",
+      "reasoning": "I have not yet tried moving south, so I will explore that direction to see if I can find the block of cheese or any other ingredients I need for the recipe.",
+      "feedback_after_action": "You can't go that way.\n\n",
+      "score_count": 0,
+      "tokens_total": 1597,
+      "tokens_prompt": 1547,
+      "tokens_completion": 50
+    },
+    {
+      "step": 6,
+      "action": "go west",
+      "observation_before": "You can't go that way.\n\n",
+      "reasoning": "Since I cannot move north, east, or south, I will try moving west to explore that direction and see if I can find the block of cheese or any other ingredients I need for the recipe.",
+      "feedback_after_action": "You can't go that way.\n\n",
+      "score_count": 0,
+      "tokens_total": 1674,
+      "tokens_prompt": 1618,
+      "tokens_completion": 56
+    },
+    {
+      "step": 7,
+      "action": "open fridge",
+      "observation_before": "You can't go that way.\n\n",
+      "reasoning": "I need to find the block of cheese, and since I cannot move in any direction, I will look for any visible containers in the room that might contain the cheese. I will open the fridge to check for ingredients.",
+      "feedback_after_action": "That's already open.\n\n",
+      "score_count": 0,
+      "tokens_total": 1756,
+      "tokens_prompt": 1695,
+      "tokens_completion": 61
+    },
+    {
+      "step": 8,
+      "action": "take block of cheese",
+      "observation_before": "That's already open.\n\n",
+      "reasoning": "Since the fridge is already open and I have not found the block of cheese, I will check for any items that might be in the fridge. I will take a look inside to see if I can find the block of cheese or any other ingredients.",
+      "feedback_after_action": "You take the block of cheese from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 1841,
+      "tokens_prompt": 1773,
+      "tokens_completion": 68
+    },
+    {
+      "step": 9,
+      "action": "dice block of cheese with knife",
+      "observation_before": "You take the block of cheese from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to dice the block of cheese as per the recipe instructions. Since I have the block of cheese, I will proceed to dice it now.",
+      "feedback_after_action": "You need to take the knife first.\n\n",
+      "score_count": 2,
+      "tokens_total": 1957,
+      "tokens_prompt": 1900,
+      "tokens_completion": 57
+    },
+    {
+      "step": 10,
+      "action": "take knife",
+      "observation_before": "You need to take the knife first.\n\n",
+      "reasoning": "I need to dice the block of cheese, but I need to have a knife in my inventory first. I will take the knife to proceed with dicing the cheese.",
+      "feedback_after_action": "You take the knife from the table.\n\n\n",
+      "score_count": 3,
+      "tokens_total": 2022,
+      "tokens_prompt": 1972,
+      "tokens_completion": 50
+    },
+    {
+      "step": 11,
+      "action": "dice block of cheese with knife",
+      "observation_before": "You take the knife from the table.\n\n\n",
+      "reasoning": "I now have the knife, so I will proceed to dice the block of cheese as per the recipe instructions.",
+      "feedback_after_action": "You dice the block of cheese.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 5,
+      "tokens_total": 2097,
+      "tokens_prompt": 2048,
+      "tokens_completion": 49
+    },
+    {
+      "step": 12,
+      "action": "cook diced block of cheese with oven",
+      "observation_before": "You dice the block of cheese.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have diced the block of cheese, and now I need to roast it according to the recipe directions. I will use the oven to roast the diced cheese.",
+      "feedback_after_action": "You burned the block of cheese!\n\n\n\n                                                      *** You lost! ***\n\nYou scored 2 out of a possible 4, in 12 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 7,
+      "tokens_total": 2201,
+      "tokens_prompt": 2143,
+      "tokens_completion": 58
+    }
+  ],
+  "total_tokens": 21235,
+  "prompt_tokens": 20592,
+  "completion_tokens": 643,
+  "avg_tokens_per_step": 1633.46
+}

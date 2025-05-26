@@ -1,0 +1,87 @@
+{
+  "episode": 0,
+  "game": "tw-cooking-recipe1+take1+cook-xW11fkvmtmZUxng",
+  "difficulty": "easy",
+  "model_temperature": 0.3,
+  "max_steps": 20,
+  "agent": "langmem",
+  "duration_seconds": 61.64,
+  "moves": 4,
+  "max_score": 3,
+  "won": true,
+  "lost": false,
+  "score": 7,
+  "steps_taken": 6,
+  "trace": [
+    {
+      "step": 1,
+      "action": "take cookbook",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou see an opened fridge. The fridge contains a sliced cilantro. You can see an oven. You see a table. On the table you see a knife. You see a counter. You see a cookbook on the counter. You can see a stove. But there is nothing on it.\n\n\n",
+      "reasoning": "I need to check the recipe in the cookbook to know what to cook, so I should take it from the counter.",
+      "feedback_after_action": "You take the cookbook from the counter.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2200,
+      "tokens_prompt": 2159,
+      "tokens_completion": 41
+    },
+    {
+      "step": 2,
+      "action": "examine cookbook",
+      "observation_before": "You take the cookbook from the counter.\n\n\n",
+      "reasoning": "I need to check the cookbook for recipes to know what to cook.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  cilantro\n\nDirections:\n  slice the cilantro\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1856,
+      "tokens_prompt": 1823,
+      "tokens_completion": 33
+    },
+    {
+      "step": 3,
+      "action": "take sliced cilantro",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  cilantro\n\nDirections:\n  slice the cilantro\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to take the sliced cilantro from the fridge to prepare the meal according to the recipe.",
+      "feedback_after_action": "You take the cilantro from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2171,
+      "tokens_prompt": 2134,
+      "tokens_completion": 37
+    },
+    {
+      "step": 4,
+      "action": "slice sliced cilantro with knife",
+      "observation_before": "You take the cilantro from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to slice the cilantro as per the recipe directions to prepare the meal.",
+      "feedback_after_action": "The cilantro is already sliced.\n\n",
+      "score_count": 2,
+      "tokens_total": 2266,
+      "tokens_prompt": 2223,
+      "tokens_completion": 43
+    },
+    {
+      "step": 5,
+      "action": "prepare meal",
+      "observation_before": "The cilantro is already sliced.\n\n",
+      "reasoning": "I have sliced cilantro and I need to prepare the meal as per the recipe directions.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 4,
+      "tokens_total": 2362,
+      "tokens_prompt": 2330,
+      "tokens_completion": 32
+    },
+    {
+      "step": 6,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have prepared the meal, and now I can eat it to satisfy my hunger.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 3 out of a possible 3, in 7 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 7,
+      "tokens_total": 2490,
+      "tokens_prompt": 2457,
+      "tokens_completion": 33
+    }
+  ],
+  "total_tokens": 13345,
+  "prompt_tokens": 13126,
+  "completion_tokens": 219,
+  "avg_tokens_per_step": 1906.43
+}

@@ -1,0 +1,120 @@
+{
+  "episode": 1,
+  "game": "tw-cooking-recipe2+cut+go6-6e6viWW5HQkxHGqq",
+  "difficulty": "easy",
+  "model_temperature": 0.3,
+  "max_steps": 20,
+  "agent": "retrieval",
+  "duration_seconds": 22.92,
+  "moves": 6,
+  "max_score": 3,
+  "won": true,
+  "lost": false,
+  "score": 6,
+  "steps_taken": 9,
+  "trace": [
+    {
+      "step": 1,
+      "action": "cook purple potato with stove",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Pantry =-\nYou're now in a pantry.\n\nYou see a shelf. But there is nothing on it.\n\nThere is an open frosted-glass door leading south.\n",
+      "reasoning": "I need to fry the purple potato as per the recipe directions. I already have a fried green bell pepper and a fried purple potato in my inventory, so I can use the fried purple potato directly without needing to cook it again.",
+      "feedback_after_action": "You can't see any such thing.\n",
+      "score_count": 0,
+      "tokens_total": 2864,
+      "tokens_prompt": 2794,
+      "tokens_completion": 70
+    },
+    {
+      "step": 2,
+      "action": "examine cookbook",
+      "observation_before": "You can't see any such thing.\n",
+      "reasoning": "I need to check the cookbook in the kitchen to find the recipe for the meal I want to prepare. This will help me understand what ingredients I need to use and how to cook them.",
+      "feedback_after_action": "You can't see any such thing.\n",
+      "score_count": 0,
+      "tokens_total": 2680,
+      "tokens_prompt": 2623,
+      "tokens_completion": 57
+    },
+    {
+      "step": 3,
+      "action": "go south",
+      "observation_before": "You can't see any such thing.\n",
+      "reasoning": "I need to explore the kitchen further to find the cookbook and check the recipe for the meal I want to prepare. Since I can't see the cookbook in the pantry, I will move south to the kitchen where I know it is located.",
+      "feedback_after_action": "\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou can see an opened fridge. The fridge contains a raw pork chop, a red onion and a lettuce. You can see a closed oven in the room. You see a table. You see a cookbook on the table. You can see a counter. On the counter you can see a banana and a knife. You see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. You need an exit without a door? You should try going west.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2766,
+      "tokens_prompt": 2703,
+      "tokens_completion": 63
+    },
+    {
+      "step": 4,
+      "action": "take cookbook",
+      "observation_before": "\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou can see an opened fridge. The fridge contains a raw pork chop, a red onion and a lettuce. You can see a closed oven in the room. You see a table. You see a cookbook on the table. You can see a counter. On the counter you can see a banana and a knife. You see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. You need an exit without a door? You should try going west.\n\n\n",
+      "reasoning": "I need to take the cookbook from the table to read the recipe for the meal I want to prepare. This will help me understand the necessary steps and ingredients.",
+      "feedback_after_action": "You take the cookbook from the table.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 3330,
+      "tokens_prompt": 3281,
+      "tokens_completion": 49
+    },
+    {
+      "step": 5,
+      "action": "dice green bell pepper with knife",
+      "observation_before": "You take the cookbook from the table.\n\n\n",
+      "reasoning": "I need to dice the green bell pepper as per the recipe directions. I already have a fried green bell pepper in my inventory, so I will use the knife on the counter to cut it.",
+      "feedback_after_action": "You need to take the knife first.\n\n",
+      "score_count": 0,
+      "tokens_total": 2972,
+      "tokens_prompt": 2906,
+      "tokens_completion": 66
+    },
+    {
+      "step": 6,
+      "action": "take knife",
+      "observation_before": "You need to take the knife first.\n\n",
+      "reasoning": "I need to take the knife from the counter first before I can dice the green bell pepper. This is a necessary step to prepare the meal according to the recipe.",
+      "feedback_after_action": "You take the knife from the counter.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2210,
+      "tokens_prompt": 2161,
+      "tokens_completion": 49
+    },
+    {
+      "step": 7,
+      "action": "dice green bell pepper with knife",
+      "observation_before": "You take the knife from the counter.\n\n\n",
+      "reasoning": "Now that I have the knife, I can dice the green bell pepper as required by the recipe. This is an essential step in preparing the meal.",
+      "feedback_after_action": "You dice the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2376,
+      "tokens_prompt": 2319,
+      "tokens_completion": 57
+    },
+    {
+      "step": 8,
+      "action": "prepare meal",
+      "observation_before": "You dice the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have all the necessary ingredients to prepare the meal: a diced fried green bell pepper, a fried purple potato, a green apple, a yellow bell pepper, and a raw yellow potato. Based on previous successful attempts, I will now assemble the meal.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 2486,
+      "tokens_prompt": 2366,
+      "tokens_completion": 120
+    },
+    {
+      "step": 9,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have successfully prepared the meal and it's now in my inventory. Following the previous successful attempts, I will eat the meal to complete my goal of cooking and enjoying a delicious meal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 3 out of a possible 3, in 8 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 6,
+      "tokens_total": 2569,
+      "tokens_prompt": 2517,
+      "tokens_completion": 52
+    }
+  ],
+  "total_tokens": 24253,
+  "prompt_tokens": 23670,
+  "completion_tokens": 583,
+  "avg_tokens_per_step": 2425.3
+}

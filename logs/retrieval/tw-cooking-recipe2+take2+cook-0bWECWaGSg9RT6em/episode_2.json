@@ -1,0 +1,98 @@
+{
+  "episode": 2,
+  "game": "tw-cooking-recipe2+take2+cook-0bWECWaGSg9RT6em",
+  "difficulty": "medium",
+  "model_temperature": 0.3,
+  "max_steps": 25,
+  "agent": "retrieval",
+  "duration_seconds": 15.04,
+  "moves": 6,
+  "max_score": 6,
+  "won": true,
+  "lost": false,
+  "score": 21,
+  "steps_taken": 7,
+  "trace": [
+    {
+      "step": 1,
+      "action": "slice red bell pepper with knife",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou can see an opened fridge. The fridge contains a sliced red bell pepper, a red onion, a red apple, a red hot pepper, a white onion, a raw chicken leg and a raw chicken breast. You see an oven. You can see a table. But there is nothing on it. You can see a counter. You see a cookbook and a knife on the counter. You can see a stove. But there is nothing on it.\n\n\n",
+      "reasoning": "I need to slice the red bell pepper as per the recipe directions. I have the red bell pepper and the knife to perform this action.",
+      "feedback_after_action": "The red bell pepper is already sliced.\n\n",
+      "score_count": 0,
+      "tokens_total": 3244,
+      "tokens_prompt": 3189,
+      "tokens_completion": 55
+    },
+    {
+      "step": 2,
+      "action": "take sliced red bell pepper",
+      "observation_before": "The red bell pepper is already sliced.\n\n",
+      "reasoning": "I need to take the sliced red bell pepper from the fridge to use it in cooking, as it is already sliced and ready for the recipe.",
+      "feedback_after_action": "You take the red bell pepper from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 1796,
+      "tokens_prompt": 1747,
+      "tokens_completion": 49
+    },
+    {
+      "step": 3,
+      "action": "cook sliced red bell pepper with oven",
+      "observation_before": "You take the red bell pepper from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to roast the sliced red bell pepper using the oven, as per the previous successful actions in the game. This will help me progress towards preparing the meal.",
+      "feedback_after_action": "You roasted the red bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 1907,
+      "tokens_prompt": 1848,
+      "tokens_completion": 59
+    },
+    {
+      "step": 4,
+      "action": "take red onion",
+      "observation_before": "You roasted the red bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to take the red onion from the fridge to fry it, as it is a necessary ingredient for the meal I am preparing. This has been a successful action in previous episodes.",
+      "feedback_after_action": "You take the red onion from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 6,
+      "tokens_total": 2005,
+      "tokens_prompt": 1951,
+      "tokens_completion": 54
+    },
+    {
+      "step": 5,
+      "action": "cook red onion with stove",
+      "observation_before": "You take the red onion from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to fry the red onion using the stove, as it is a necessary step in the recipe and has been successful in previous episodes.",
+      "feedback_after_action": "You fried the red onion.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 10,
+      "tokens_total": 2087,
+      "tokens_prompt": 2035,
+      "tokens_completion": 52
+    },
+    {
+      "step": 6,
+      "action": "prepare meal",
+      "observation_before": "You fried the red onion.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have all the necessary ingredients ready: the fried red onion and the sliced roasted red bell pepper. It's time to prepare the meal, as this has been a successful action in previous episodes.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 15,
+      "tokens_total": 2171,
+      "tokens_prompt": 2118,
+      "tokens_completion": 53
+    },
+    {
+      "step": 7,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have successfully prepared the meal and it's time to eat it to complete my goal of cooking and enjoying a delicious meal, as indicated by previous successful actions.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 6 out of a possible 6, in 8 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 21,
+      "tokens_total": 2323,
+      "tokens_prompt": 2276,
+      "tokens_completion": 47
+    }
+  ],
+  "total_tokens": 15533,
+  "prompt_tokens": 15164,
+  "completion_tokens": 369,
+  "avg_tokens_per_step": 1941.62
+}

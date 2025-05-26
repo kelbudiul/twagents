@@ -1,0 +1,98 @@
+{
+  "episode": 2,
+  "game": "tw-cooking-recipe2+cut+go6-6e6viWW5HQkxHGqq",
+  "difficulty": "easy",
+  "model_temperature": 0.3,
+  "max_steps": 20,
+  "agent": "langmem",
+  "duration_seconds": 54.96,
+  "moves": 5,
+  "max_score": 3,
+  "won": false,
+  "lost": true,
+  "score": 2,
+  "steps_taken": 7,
+  "trace": [
+    {
+      "step": 1,
+      "action": "go south",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Pantry =-\nYou're now in a pantry.\n\nYou see a shelf. But there is nothing on it.\n\nThere is an open frosted-glass door leading south.\n",
+      "reasoning": "I need to check the cookbook in the kitchen for the recipe to cook a delicious meal.",
+      "feedback_after_action": "\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou can see an opened fridge. The fridge contains a raw pork chop, a red onion and a lettuce. You can see a closed oven in the room. You see a table. You see a cookbook on the table. You can see a counter. On the counter you can see a banana and a knife. You see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. You need an exit without a door? You should try going west.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2182,
+      "tokens_prompt": 2148,
+      "tokens_completion": 34
+    },
+    {
+      "step": 2,
+      "action": "examine cookbook",
+      "observation_before": "\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou can see an opened fridge. The fridge contains a raw pork chop, a red onion and a lettuce. You can see a closed oven in the room. You see a table. You see a cookbook on the table. You can see a counter. On the counter you can see a banana and a knife. You see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. You need an exit without a door? You should try going west.\n\n\n",
+      "reasoning": "I need to check the cookbook on the table for a recipe to cook a delicious meal.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  green bell pepper\n  purple potato\n\nDirections:\n  dice the green bell pepper\n  fry the green bell pepper\n  fry the purple potato\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2105,
+      "tokens_prompt": 2068,
+      "tokens_completion": 37
+    },
+    {
+      "step": 3,
+      "action": "Error: fry is not a valid tool, try one of [go, take, drop, open, put_in, put_on, take_from, cook, cut, examine, prepare_meal, eat_meal].",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  green bell pepper\n  purple potato\n\nDirections:\n  dice the green bell pepper\n  fry the green bell pepper\n  fry the purple potato\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to dice the green bell pepper as per the recipe instructions.",
+      "feedback_after_action": "You seem to want to talk to someone, but I can't see whom.\n",
+      "score_count": 0,
+      "tokens_total": 2329,
+      "tokens_prompt": 2233,
+      "tokens_completion": 96
+    },
+    {
+      "step": 4,
+      "action": "dice green bell pepper with knife",
+      "observation_before": "You seem to want to talk to someone, but I can't see whom.\n",
+      "reasoning": "I need to dice the green bell pepper as per the recipe instructions.",
+      "feedback_after_action": "You need to take the knife first.\n\n",
+      "score_count": 0,
+      "tokens_total": 2463,
+      "tokens_prompt": 2422,
+      "tokens_completion": 41
+    },
+    {
+      "step": 5,
+      "action": "take knife",
+      "observation_before": "You need to take the knife first.\n\n",
+      "reasoning": "I need to take the knife from the counter in order to dice the green bell pepper for the recipe.",
+      "feedback_after_action": "You take the knife from the counter.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2590,
+      "tokens_prompt": 2553,
+      "tokens_completion": 37
+    },
+    {
+      "step": 6,
+      "action": "dice green bell pepper with knife",
+      "observation_before": "You take the knife from the counter.\n\n\n",
+      "reasoning": "I need to dice the green bell pepper now that I have the knife.",
+      "feedback_after_action": "You dice the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2731,
+      "tokens_prompt": 2689,
+      "tokens_completion": 42
+    },
+    {
+      "step": 7,
+      "action": "cook diced fried green bell pepper with stove",
+      "observation_before": "You dice the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to fry the diced green bell pepper as per the recipe instructions.",
+      "feedback_after_action": "You burned the green bell pepper!\n\n\n\n                                                      *** You lost! ***\n\nYou scored 1 out of a possible 3, in 6 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 2,
+      "tokens_total": 2894,
+      "tokens_prompt": 2851,
+      "tokens_completion": 43
+    }
+  ],
+  "total_tokens": 17294,
+  "prompt_tokens": 16964,
+  "completion_tokens": 330,
+  "avg_tokens_per_step": 2161.75
+}

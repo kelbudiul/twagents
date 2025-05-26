@@ -1,0 +1,153 @@
+{
+  "episode": 1,
+  "game": "tw-cooking-recipe1+take1+cook-xW11fkvmtmZUxng",
+  "difficulty": "easy",
+  "model_temperature": 0.3,
+  "max_steps": 20,
+  "agent": "langmem",
+  "duration_seconds": 115.08,
+  "moves": 4,
+  "max_score": 3,
+  "won": true,
+  "lost": false,
+  "score": 7,
+  "steps_taken": 12,
+  "trace": [
+    {
+      "step": 1,
+      "action": "take cookbook",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou see an opened fridge. The fridge contains a sliced cilantro. You can see an oven. You see a table. On the table you see a knife. You see a counter. You see a cookbook on the counter. You can see a stove. But there is nothing on it.\n\n\n",
+      "reasoning": "I need to check the recipe in the cookbook to know what to cook.",
+      "feedback_after_action": "You take the cookbook from the counter.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2191,
+      "tokens_prompt": 2159,
+      "tokens_completion": 32
+    },
+    {
+      "step": 2,
+      "action": "examine cookbook",
+      "observation_before": "You take the cookbook from the counter.\n\n\n",
+      "reasoning": "I need to check the cookbook for the recipe to know what to cook.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  cilantro\n\nDirections:\n  slice the cilantro\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1848,
+      "tokens_prompt": 1814,
+      "tokens_completion": 34
+    },
+    {
+      "step": 3,
+      "action": "go search",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  cilantro\n\nDirections:\n  slice the cilantro\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to find cilantro to follow the recipe, so I will explore the kitchen for ingredients.",
+      "feedback_after_action": "You can't see any such thing.\n",
+      "score_count": 0,
+      "tokens_total": 2051,
+      "tokens_prompt": 2016,
+      "tokens_completion": 35
+    },
+    {
+      "step": 4,
+      "action": "go north",
+      "observation_before": "You can't see any such thing.\n",
+      "reasoning": "I need to explore the kitchen further to find cilantro, as I couldn't locate it before. I will check the fridge or any other containers.",
+      "feedback_after_action": "You can't go that way.\n\n",
+      "score_count": 0,
+      "tokens_total": 2211,
+      "tokens_prompt": 2167,
+      "tokens_completion": 44
+    },
+    {
+      "step": 5,
+      "action": "go west",
+      "observation_before": "You can't go that way.\n\n",
+      "reasoning": "I need to explore the kitchen further to find cilantro. I will check another direction since I couldn't go north.",
+      "feedback_after_action": "You can't go that way.\n\n",
+      "score_count": 0,
+      "tokens_total": 2317,
+      "tokens_prompt": 2279,
+      "tokens_completion": 38
+    },
+    {
+      "step": 6,
+      "action": "go south",
+      "observation_before": "You can't go that way.\n\n",
+      "reasoning": "I need to explore the kitchen further to find cilantro. Since I can't go north or west, I will try going south to see if there are any other areas to explore.",
+      "feedback_after_action": "You can't go that way.\n\n",
+      "score_count": 0,
+      "tokens_total": 2497,
+      "tokens_prompt": 2446,
+      "tokens_completion": 51
+    },
+    {
+      "step": 7,
+      "action": "go east",
+      "observation_before": "You can't go that way.\n\n",
+      "reasoning": "Since I have explored the north, west, and south directions without finding anything, I will try going east to see if there are any other areas to explore in the kitchen.",
+      "feedback_after_action": "You can't go that way.\n\n",
+      "score_count": 0,
+      "tokens_total": 2617,
+      "tokens_prompt": 2566,
+      "tokens_completion": 51
+    },
+    {
+      "step": 8,
+      "action": "open fridge",
+      "observation_before": "You can't go that way.\n\n",
+      "reasoning": "The fridge might contain cilantro or other ingredients needed for the recipe, so I will open it to check.",
+      "feedback_after_action": "That's already open.\n\n",
+      "score_count": 0,
+      "tokens_total": 2830,
+      "tokens_prompt": 2792,
+      "tokens_completion": 38
+    },
+    {
+      "step": 9,
+      "action": "take cilantro from fridge",
+      "observation_before": "That's already open.\n\n",
+      "reasoning": "I need to check inside the fridge for ingredients. Since the fridge is already open, I will take out any visible items that might be useful.",
+      "feedback_after_action": "You take the cilantro from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2947,
+      "tokens_prompt": 2895,
+      "tokens_completion": 52
+    },
+    {
+      "step": 10,
+      "action": "slice cilantro with knife",
+      "observation_before": "You take the cilantro from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to slice the cilantro as per the recipe instructions before preparing the meal.",
+      "feedback_after_action": "The cilantro is already sliced.\n\n",
+      "score_count": 2,
+      "tokens_total": 3095,
+      "tokens_prompt": 3053,
+      "tokens_completion": 42
+    },
+    {
+      "step": 11,
+      "action": "prepare meal",
+      "observation_before": "The cilantro is already sliced.\n\n",
+      "reasoning": "I have sliced the cilantro as per the recipe, so now I will prepare the meal.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 4,
+      "tokens_total": 3191,
+      "tokens_prompt": 3158,
+      "tokens_completion": 33
+    },
+    {
+      "step": 12,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have prepared the meal, and now I will eat it to complete my goal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 3 out of a possible 3, in 12 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 7,
+      "tokens_total": 3319,
+      "tokens_prompt": 3286,
+      "tokens_completion": 33
+    }
+  ],
+  "total_tokens": 31114,
+  "prompt_tokens": 30631,
+  "completion_tokens": 483,
+  "avg_tokens_per_step": 2393.38
+}

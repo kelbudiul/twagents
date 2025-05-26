@@ -1,0 +1,120 @@
+{
+  "episode": 2,
+  "game": "tw-cooking-recipe2+take2+cook+cut+go9-XLg0fev2iK3gsXpX",
+  "difficulty": "very_hard",
+  "model_temperature": 0.3,
+  "max_steps": 45,
+  "agent": "baseline",
+  "duration_seconds": 16.22,
+  "moves": 7,
+  "max_score": 6,
+  "won": false,
+  "lost": true,
+  "score": 7,
+  "steps_taken": 9,
+  "trace": [
+    {
+      "step": 1,
+      "action": "take cookbook",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou can see a fridge. The fridge contains a yellow onion, a yellow apple, a red onion, a raw egg and a raw white tuna. You see a closed oven. You can see a table. On the table you see a knife. You can see a counter. On the counter you see a red apple, a banana and a cookbook. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading east. There is an open screen door leading west. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door.\n",
+      "reasoning": "I need to check the recipe in the cookbook to determine what ingredients I need for the meal. The cookbook is on the counter, so I will take it first.",
+      "feedback_after_action": "You take the cookbook from the counter.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1782,
+      "tokens_prompt": 1732,
+      "tokens_completion": 50
+    },
+    {
+      "step": 2,
+      "action": "examine cookbook",
+      "observation_before": "You take the cookbook from the counter.\n\n\n",
+      "reasoning": "I have the cookbook now, and I need to examine it to find a recipe for a meal that I can cook. This will help me identify the ingredients and cooking methods required.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  black pepper\n  yellow onion\n\nDirections:\n  dice the yellow onion\n  grill the yellow onion\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1334,
+      "tokens_prompt": 1279,
+      "tokens_completion": 55
+    },
+    {
+      "step": 3,
+      "action": "go north",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  black pepper\n  yellow onion\n\nDirections:\n  dice the yellow onion\n  grill the yellow onion\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to find the ingredients for the recipe, which are black pepper and yellow onion. I will move to the next room to search for these ingredients, as I currently only have the cookbook in my inventory.",
+      "feedback_after_action": "\n-= Livingroom =-\nYou're now in the livingroom.\n\nYou can see a sofa. But there is nothing on it.\n\nThere is an exit to the south. Don't worry, there is no door.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1537,
+      "tokens_prompt": 1479,
+      "tokens_completion": 58
+    },
+    {
+      "step": 4,
+      "action": "go south",
+      "observation_before": "\n-= Livingroom =-\nYou're now in the livingroom.\n\nYou can see a sofa. But there is nothing on it.\n\nThere is an exit to the south. Don't worry, there is no door.\n\n\n",
+      "reasoning": "The living room does not have the ingredients I need for the recipe. I will return to the previous room to continue searching for the ingredients, as there are no other exits to explore here.",
+      "feedback_after_action": "\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou can see a fridge. The fridge contains a yellow onion, a yellow apple, a red onion, a raw egg and a raw white tuna. You see a closed oven. You can see a table. On the table you see a knife. You can see a counter. On the counter you see a red apple and a banana. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading east. There is an open screen door leading west. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1620,
+      "tokens_prompt": 1566,
+      "tokens_completion": 54
+    },
+    {
+      "step": 5,
+      "action": "take yellow onion",
+      "observation_before": "\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou can see a fridge. The fridge contains a yellow onion, a yellow apple, a red onion, a raw egg and a raw white tuna. You see a closed oven. You can see a table. On the table you see a knife. You can see a counter. On the counter you see a red apple and a banana. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading east. There is an open screen door leading west. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door.\n\n\n",
+      "reasoning": "I need to gather the ingredients for the recipe, specifically the yellow onion, which is in the fridge. I will take the yellow onion first.",
+      "feedback_after_action": "You take the yellow onion from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 1928,
+      "tokens_prompt": 1882,
+      "tokens_completion": 46
+    },
+    {
+      "step": 6,
+      "action": "dice yellow onion with knife",
+      "observation_before": "You take the yellow onion from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to prepare the yellow onion for cooking by dicing it, as per the recipe instructions. I will use the knife on the table to dice the onion.",
+      "feedback_after_action": "You need to take the knife first.\n\n",
+      "score_count": 2,
+      "tokens_total": 1901,
+      "tokens_prompt": 1842,
+      "tokens_completion": 59
+    },
+    {
+      "step": 7,
+      "action": "take knife",
+      "observation_before": "You need to take the knife first.\n\n",
+      "reasoning": "I need to use the knife to dice the yellow onion, so I will take the knife from the table first before proceeding with the dicing.",
+      "feedback_after_action": "You take the knife from the table.\n\n\n",
+      "score_count": 3,
+      "tokens_total": 1961,
+      "tokens_prompt": 1916,
+      "tokens_completion": 45
+    },
+    {
+      "step": 8,
+      "action": "dice yellow onion with knife",
+      "observation_before": "You take the knife from the table.\n\n\n",
+      "reasoning": "I now have the knife, so I can proceed to dice the yellow onion as required by the recipe. This is the next step in preparing the meal.",
+      "feedback_after_action": "You dice the yellow onion.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 5,
+      "tokens_total": 2044,
+      "tokens_prompt": 1987,
+      "tokens_completion": 57
+    },
+    {
+      "step": 9,
+      "action": "cook diced yellow onion with stove",
+      "observation_before": "You dice the yellow onion.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "The next step in the recipe is to grill the diced yellow onion. I will use the stove to grill the onion now that it is prepared.",
+      "feedback_after_action": "You fried the yellow onion.\n\n\n\n                                                      *** You lost! ***\n\nYou scored 2 out of a possible 6, in 9 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 7,
+      "tokens_total": 2142,
+      "tokens_prompt": 2087,
+      "tokens_completion": 55
+    }
+  ],
+  "total_tokens": 16249,
+  "prompt_tokens": 15770,
+  "completion_tokens": 479,
+  "avg_tokens_per_step": 1624.9
+}

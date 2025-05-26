@@ -1,0 +1,120 @@
+{
+  "episode": 0,
+  "game": "tw-cooking-recipe3+take3+cook-xQ0of98VFPlOfpvD",
+  "difficulty": "medium",
+  "model_temperature": 0.3,
+  "max_steps": 25,
+  "agent": "retrieval",
+  "duration_seconds": 21.49,
+  "moves": 8,
+  "max_score": 7,
+  "won": true,
+  "lost": false,
+  "score": 33,
+  "steps_taken": 9,
+  "trace": [
+    {
+      "step": 1,
+      "action": "examine cookbook",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou can see an opened fridge here. The fridge contains a chopped yellow bell pepper, a red onion, a white onion, a red hot pepper, a raw yellow potato, a carrot and a raw chicken leg. You can see an oven. You see a table. You see a knife on the table. You can see a counter. You see a cookbook on the counter. You see a stove. But there is nothing on it.\n\n\n",
+      "reasoning": "I need to check the cookbook for a recipe to know what ingredients I need to prepare a meal. This is the first step to achieve my goal of cooking and eating a meal.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  red onion\n  white onion\n  yellow bell pepper\n\nDirections:\n  fry the red onion\n  fry the white onion\n  chop the yellow bell pepper\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1946,
+      "tokens_prompt": 1891,
+      "tokens_completion": 55
+    },
+    {
+      "step": 2,
+      "action": "take red onion",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  red onion\n  white onion\n  yellow bell pepper\n\nDirections:\n  fry the red onion\n  fry the white onion\n  chop the yellow bell pepper\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to gather the ingredients for the recipe. The first ingredient I will take is the red onion from the fridge, as it is one of the required ingredients for the meal.",
+      "feedback_after_action": "You take the red onion from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2277,
+      "tokens_prompt": 2224,
+      "tokens_completion": 53
+    },
+    {
+      "step": 3,
+      "action": "take white onion",
+      "observation_before": "You take the red onion from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "Next, I need to gather the second ingredient for the recipe, which is the white onion. Since it is also in the fridge, I will take it now.",
+      "feedback_after_action": "You take the white onion from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 2431,
+      "tokens_prompt": 2381,
+      "tokens_completion": 50
+    },
+    {
+      "step": 4,
+      "action": "take yellow bell pepper",
+      "observation_before": "You take the white onion from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "The last ingredient I need for the recipe is the yellow bell pepper. Since I already saw it in the fridge, I will take it now to complete my inventory for the meal preparation.",
+      "feedback_after_action": "You take the yellow bell pepper from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 6,
+      "tokens_total": 2591,
+      "tokens_prompt": 2536,
+      "tokens_completion": 55
+    },
+    {
+      "step": 5,
+      "action": "cook red onion with stove",
+      "observation_before": "You take the yellow bell pepper from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to fry the red onion as per the recipe instructions. Since I am currently carrying the red onion, I can proceed to cook it on the stove.",
+      "feedback_after_action": "You fried the red onion.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 10,
+      "tokens_total": 2759,
+      "tokens_prompt": 2703,
+      "tokens_completion": 56
+    },
+    {
+      "step": 6,
+      "action": "cook white onion with stove",
+      "observation_before": "You fried the red onion.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "Next, I need to fry the white onion as per the recipe instructions. Since I am currently carrying the white onion, I can proceed to cook it on the stove.",
+      "feedback_after_action": "You fried the white onion.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 15,
+      "tokens_total": 2320,
+      "tokens_prompt": 2262,
+      "tokens_completion": 58
+    },
+    {
+      "step": 7,
+      "action": "chop yellow bell pepper with knife",
+      "observation_before": "You fried the white onion.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to chop the yellow bell pepper as per the recipe instructions. Since I am currently carrying the yellow bell pepper, I can proceed to chop it now.",
+      "feedback_after_action": "The yellow bell pepper is already chopped.\n\n",
+      "score_count": 20,
+      "tokens_total": 2350,
+      "tokens_prompt": 2290,
+      "tokens_completion": 60
+    },
+    {
+      "step": 8,
+      "action": "prepare meal",
+      "observation_before": "The yellow bell pepper is already chopped.\n\n",
+      "reasoning": "I have successfully fried the red onion and white onion, and chopped the yellow bell pepper. Now, I can assemble the meal using these cooked ingredients.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 26,
+      "tokens_total": 2470,
+      "tokens_prompt": 2425,
+      "tokens_completion": 45
+    },
+    {
+      "step": 9,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have successfully prepared the meal, and now I can eat it to complete my goal of cooking and enjoying a delicious meal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 7 out of a possible 7, in 10 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 33,
+      "tokens_total": 2476,
+      "tokens_prompt": 2435,
+      "tokens_completion": 41
+    }
+  ],
+  "total_tokens": 21620,
+  "prompt_tokens": 21147,
+  "completion_tokens": 473,
+  "avg_tokens_per_step": 2162.0
+}

@@ -1,0 +1,87 @@
+{
+  "episode": 1,
+  "game": "tw-cooking-recipe3+cut+go9-2N8qfOdquplPCBEl",
+  "difficulty": "easy",
+  "model_temperature": 0.3,
+  "max_steps": 20,
+  "agent": "retrieval",
+  "duration_seconds": 14.94,
+  "moves": 5,
+  "max_score": 4,
+  "won": true,
+  "lost": false,
+  "score": 11,
+  "steps_taken": 6,
+  "trace": [
+    {
+      "step": 1,
+      "action": "take knife",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou see an opened fridge. The fridge contains a white onion, a block of cheese, a yellow bell pepper, a red onion, a cilantro and some water. You can see an oven. You see a table. On the table you see a cookbook and a knife. You see a counter. You see a raw red potato on the counter. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. You don't like doors? Why not try going south, that entranceway is not blocked by one.\n",
+      "reasoning": "I need to take the knife from the table to slice the green bell pepper as per the recipe instructions.",
+      "feedback_after_action": "You take the knife from the table.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2848,
+      "tokens_prompt": 2811,
+      "tokens_completion": 37
+    },
+    {
+      "step": 2,
+      "action": "slice fried red tuna with knife",
+      "observation_before": "You take the knife from the table.\n\n\n",
+      "reasoning": "Now that I have the knife, I will slice the fried red tuna as it is required for the recipe to prepare the meal.",
+      "feedback_after_action": "You slice the red tuna.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2248,
+      "tokens_prompt": 2195,
+      "tokens_completion": 53
+    },
+    {
+      "step": 3,
+      "action": "prepare meal",
+      "observation_before": "You slice the red tuna.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have sliced the fried red tuna and I also have the grilled green bell pepper. Now I can prepare the meal as the recipe requires these ingredients.",
+      "feedback_after_action": "The recipe requires a sliced grilled green bell pepper.\n\n",
+      "score_count": 2,
+      "tokens_total": 1867,
+      "tokens_prompt": 1810,
+      "tokens_completion": 57
+    },
+    {
+      "step": 4,
+      "action": "slice grilled green bell pepper with knife",
+      "observation_before": "The recipe requires a sliced grilled green bell pepper.\n\n",
+      "reasoning": "I need to slice the grilled green bell pepper to meet the recipe requirements for the meal preparation. I have the knife and the grilled green bell pepper in my inventory.",
+      "feedback_after_action": "You slice the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 4,
+      "tokens_total": 1965,
+      "tokens_prompt": 1903,
+      "tokens_completion": 62
+    },
+    {
+      "step": 5,
+      "action": "prepare meal",
+      "observation_before": "You slice the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have now sliced both the grilled green bell pepper and the fried red tuna. I can prepare the meal since I have all the required ingredients as per the recipe.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 7,
+      "tokens_total": 2077,
+      "tokens_prompt": 2016,
+      "tokens_completion": 61
+    },
+    {
+      "step": 6,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have successfully prepared the meal and added it to my inventory. Now, I will eat the meal to complete my goal of cooking and enjoying a delicious meal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 4 out of a possible 4, in 7 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 11,
+      "tokens_total": 2199,
+      "tokens_prompt": 2151,
+      "tokens_completion": 48
+    }
+  ],
+  "total_tokens": 13204,
+  "prompt_tokens": 12886,
+  "completion_tokens": 318,
+  "avg_tokens_per_step": 1886.29
+}

@@ -1,0 +1,65 @@
+{
+  "episode": 3,
+  "game": "tw-cooking-recipe1+take1+cook-xW11fkvmtmZUxng",
+  "difficulty": "easy",
+  "model_temperature": 0.3,
+  "max_steps": 20,
+  "agent": "retrieval",
+  "duration_seconds": 8.97,
+  "moves": 3,
+  "max_score": 3,
+  "won": true,
+  "lost": false,
+  "score": 6,
+  "steps_taken": 4,
+  "trace": [
+    {
+      "step": 1,
+      "action": "slice cilantro with knife",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou see an opened fridge. The fridge contains a sliced cilantro. You can see an oven. You see a table. On the table you see a knife. You see a counter. You see a cookbook on the counter. You can see a stove. But there is nothing on it.\n\n\n",
+      "reasoning": "I need to slice the cilantro as per the recipe instructions in the cookbook. I have the cilantro in my inventory, and I can use the knife on the table to slice it.",
+      "feedback_after_action": "The cilantro is already sliced.\n\n",
+      "score_count": 0,
+      "tokens_total": 3552,
+      "tokens_prompt": 3490,
+      "tokens_completion": 62
+    },
+    {
+      "step": 2,
+      "action": "take sliced cilantro",
+      "observation_before": "The cilantro is already sliced.\n\n",
+      "reasoning": "The sliced cilantro is in the fridge, and I need to take it to use it in the meal preparation. This was a successful action in previous episodes, so I will do it again.",
+      "feedback_after_action": "You take the cilantro from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2213,
+      "tokens_prompt": 2157,
+      "tokens_completion": 56
+    },
+    {
+      "step": 3,
+      "action": "prepare meal",
+      "observation_before": "You take the cilantro from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have the sliced cilantro in my inventory, and based on previous episodes, preparing the meal after taking the cilantro has been successful. Now, I will prepare the meal to complete my goal of cooking and eating.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 1880,
+      "tokens_prompt": 1823,
+      "tokens_completion": 57
+    },
+    {
+      "step": 4,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have successfully prepared the meal and added it to my inventory. Based on previous episodes, eating the meal after preparation has consistently resulted in a successful outcome. Therefore, I will eat the meal to complete my goal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 3 out of a possible 3, in 5 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 6,
+      "tokens_total": 2122,
+      "tokens_prompt": 2063,
+      "tokens_completion": 59
+    }
+  ],
+  "total_tokens": 9767,
+  "prompt_tokens": 9533,
+  "completion_tokens": 234,
+  "avg_tokens_per_step": 1953.4
+}

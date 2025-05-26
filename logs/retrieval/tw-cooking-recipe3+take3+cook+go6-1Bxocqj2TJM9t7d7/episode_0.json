@@ -1,0 +1,142 @@
+{
+  "episode": 0,
+  "game": "tw-cooking-recipe3+take3+cook+go6-1Bxocqj2TJM9t7d7",
+  "difficulty": "medium",
+  "model_temperature": 0.3,
+  "max_steps": 25,
+  "agent": "retrieval",
+  "duration_seconds": 25.02,
+  "moves": 9,
+  "max_score": 6,
+  "won": true,
+  "lost": false,
+  "score": 24,
+  "steps_taken": 11,
+  "trace": [
+    {
+      "step": 1,
+      "action": "go south",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Bedroom =-\nYou're now in the bedroom.\n\nYou can see a bed. But there is nothing on it.\n\nThere is an exit to the south. You need an exit without a door? You should try going west.\n",
+      "reasoning": "I need to find the kitchen to check the cookbook for the recipe to cook a meal. The only exit available is to the south, so I will go that way.",
+      "feedback_after_action": "\n-= Livingroom =-\nYou're now in the livingroom.\n\nYou see a sofa. But there is nothing on it.\n\nYou don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1887,
+      "tokens_prompt": 1837,
+      "tokens_completion": 50
+    },
+    {
+      "step": 2,
+      "action": "go west",
+      "observation_before": "\n-= Livingroom =-\nYou're now in the livingroom.\n\nYou see a sofa. But there is nothing on it.\n\nYou don't like doors? Why not try going north, that entranceway is not blocked by one. There is an exit to the west. Don't worry, there is no door.\n\n\n",
+      "reasoning": "I need to find the kitchen to check the cookbook for the recipe to cook a meal. The only exit available is to the west, so I will go that way.",
+      "feedback_after_action": "\n-= Kitchen =-\nYou're now in a kitchen.\n\nYou can see a fridge. The fridge contains some water, a chopped green bell pepper, a parsley, a green apple, an orange bell pepper, a raw chicken wing and a carrot. You can see an oven. You can see a table. On the table you see a cookbook and a knife. You see a counter. You see a red apple and a banana on the counter. You can see a stove. But there is nothing on it.\n\nThere is an open plain door leading west. There is an exit to the east. Don't worry, there is no door. There is an exit to the north. Don't worry, there is no door.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2152,
+      "tokens_prompt": 2102,
+      "tokens_completion": 50
+    },
+    {
+      "step": 3,
+      "action": "take cookbook",
+      "observation_before": "\n-= Kitchen =-\nYou're now in a kitchen.\n\nYou can see a fridge. The fridge contains some water, a chopped green bell pepper, a parsley, a green apple, an orange bell pepper, a raw chicken wing and a carrot. You can see an oven. You can see a table. On the table you see a cookbook and a knife. You see a counter. You see a red apple and a banana on the counter. You can see a stove. But there is nothing on it.\n\nThere is an open plain door leading west. There is an exit to the east. Don't worry, there is no door. There is an exit to the north. Don't worry, there is no door.\n\n\n",
+      "reasoning": "I need to check the cookbook for a recipe to cook a meal. The cookbook is on the table in the kitchen, so I will take it to my inventory.",
+      "feedback_after_action": "You take the cookbook from the table.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2670,
+      "tokens_prompt": 2620,
+      "tokens_completion": 50
+    },
+    {
+      "step": 4,
+      "action": "examine cookbook",
+      "observation_before": "You take the cookbook from the table.\n\n\n",
+      "reasoning": "I need to check the cookbook for a recipe to cook a meal. Since I have the cookbook now, I will examine it to find out what I can cook with the ingredients available in the kitchen.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  green bell pepper\n  parsley\n  water\n\nDirections:\n  chop the green bell pepper\n  fry the green bell pepper\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2797,
+      "tokens_prompt": 2738,
+      "tokens_completion": 59
+    },
+    {
+      "step": 5,
+      "action": "take chopped green bell pepper",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  green bell pepper\n  parsley\n  water\n\nDirections:\n  chop the green bell pepper\n  fry the green bell pepper\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to gather the ingredients for the recipe. The recipe requires a green bell pepper, parsley, and water. I can see that there is a chopped green bell pepper in the fridge, so I will take that first.",
+      "feedback_after_action": "You take the green bell pepper from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 3126,
+      "tokens_prompt": 3061,
+      "tokens_completion": 65
+    },
+    {
+      "step": 6,
+      "action": "take parsley",
+      "observation_before": "You take the green bell pepper from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "The recipe requires parsley as one of the ingredients. I see parsley in the fridge, so I will take it to my inventory next.",
+      "feedback_after_action": "You take the parsley from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 2765,
+      "tokens_prompt": 2721,
+      "tokens_completion": 44
+    },
+    {
+      "step": 7,
+      "action": "take water",
+      "observation_before": "You take the parsley from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "The recipe requires water as one of the ingredients. I see water in the fridge, so I will take it to my inventory as the last ingredient needed for the recipe.",
+      "feedback_after_action": "You take the water from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 6,
+      "tokens_total": 2685,
+      "tokens_prompt": 2635,
+      "tokens_completion": 50
+    },
+    {
+      "step": 8,
+      "action": "chop chopped green bell pepper with knife",
+      "observation_before": "You take the water from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "The recipe requires me to chop the green bell pepper before frying it. I have the chopped green bell pepper in my inventory, so I will chop it using the knife I saw in the kitchen.",
+      "feedback_after_action": "The green bell pepper is already chopped.\n\n",
+      "score_count": 9,
+      "tokens_total": 2744,
+      "tokens_prompt": 2675,
+      "tokens_completion": 69
+    },
+    {
+      "step": 9,
+      "action": "cook chopped green bell pepper with stove",
+      "observation_before": "The green bell pepper is already chopped.\n\n",
+      "reasoning": "The recipe requires me to fry the green bell pepper after chopping it. Since the green bell pepper is already chopped and I have it in my inventory, I will fry it using the stove.",
+      "feedback_after_action": "You fried the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 13,
+      "tokens_total": 2756,
+      "tokens_prompt": 2691,
+      "tokens_completion": 65
+    },
+    {
+      "step": 10,
+      "action": "prepare meal",
+      "observation_before": "You fried the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have gathered all the ingredients required for the meal: fried green bell pepper, parsley, and water. Now I will prepare the meal using these ingredients.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 18,
+      "tokens_total": 2797,
+      "tokens_prompt": 2751,
+      "tokens_completion": 46
+    },
+    {
+      "step": 11,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have successfully prepared the meal and added it to my inventory. Now, I will eat the meal to complete my goal of cooking and enjoying a delicious meal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 6 out of a possible 6, in 12 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 24,
+      "tokens_total": 2877,
+      "tokens_prompt": 2829,
+      "tokens_completion": 48
+    }
+  ],
+  "total_tokens": 29256,
+  "prompt_tokens": 28660,
+  "completion_tokens": 596,
+  "avg_tokens_per_step": 2438.0
+}

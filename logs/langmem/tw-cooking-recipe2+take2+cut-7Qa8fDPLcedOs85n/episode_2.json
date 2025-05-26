@@ -1,0 +1,76 @@
+{
+  "episode": 2,
+  "game": "tw-cooking-recipe2+take2+cut-7Qa8fDPLcedOs85n",
+  "difficulty": "medium",
+  "model_temperature": 0.3,
+  "max_steps": 25,
+  "agent": "langmem",
+  "duration_seconds": 44.19,
+  "moves": 4,
+  "max_score": 4,
+  "won": false,
+  "lost": true,
+  "score": 5,
+  "steps_taken": 5,
+  "trace": [
+    {
+      "step": 1,
+      "action": "take cookbook",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou're now in a kitchen.\n\nYou can see a fridge. The fridge contains a roasted pork chop, a fried chicken leg and a raw chicken wing. You can see a closed oven. You can see a table. But there is nothing on it. You can see a counter. You see a cookbook and a knife on the counter. You see a stove. But there is nothing on it.\n\n\n",
+      "reasoning": "I need to check the recipe in the cookbook to know what to cook.",
+      "feedback_after_action": "You take the cookbook from the counter.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2205,
+      "tokens_prompt": 2173,
+      "tokens_completion": 32
+    },
+    {
+      "step": 2,
+      "action": "examine cookbook",
+      "observation_before": "You take the cookbook from the counter.\n\n\n",
+      "reasoning": "I need to check the cookbook for a recipe to know what to cook.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  chicken leg\n  pork chop\n\nDirections:\n  fry the chicken leg\n  roast the pork chop\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1848,
+      "tokens_prompt": 1814,
+      "tokens_completion": 34
+    },
+    {
+      "step": 3,
+      "action": "take pork chop",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  chicken leg\n  pork chop\n\nDirections:\n  fry the chicken leg\n  roast the pork chop\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to take the chicken leg from the fridge to fry it according to the recipe.",
+      "feedback_after_action": "You take the pork chop from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2271,
+      "tokens_prompt": 2183,
+      "tokens_completion": 88
+    },
+    {
+      "step": 4,
+      "action": "take chicken leg",
+      "observation_before": "You take the pork chop from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to take the chicken leg from the fridge to fry it according to the recipe.",
+      "feedback_after_action": "You take the chicken leg from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 2361,
+      "tokens_prompt": 2325,
+      "tokens_completion": 36
+    },
+    {
+      "step": 5,
+      "action": "cook pork chop with oven",
+      "observation_before": "You take the chicken leg from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to fry the chicken leg as per the recipe instructions.",
+      "feedback_after_action": "You burned the pork chop!\n\n\n\n                                                      *** You lost! ***\n\nYou scored 2 out of a possible 4, in 5 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 5,
+      "tokens_total": 2550,
+      "tokens_prompt": 2459,
+      "tokens_completion": 91
+    }
+  ],
+  "total_tokens": 11235,
+  "prompt_tokens": 10954,
+  "completion_tokens": 281,
+  "avg_tokens_per_step": 1872.5
+}

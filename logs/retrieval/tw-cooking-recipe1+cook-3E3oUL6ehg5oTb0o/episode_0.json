@@ -1,0 +1,65 @@
+{
+  "episode": 0,
+  "game": "tw-cooking-recipe1+cook-3E3oUL6ehg5oTb0o",
+  "difficulty": "easy",
+  "model_temperature": 0.3,
+  "max_steps": 20,
+  "agent": "retrieval",
+  "duration_seconds": 8.89,
+  "moves": 4,
+  "max_score": 3,
+  "won": true,
+  "lost": false,
+  "score": 6,
+  "steps_taken": 4,
+  "trace": [
+    {
+      "step": 1,
+      "action": "examine cookbook",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou're now in a kitchen.\n\nYou see a fridge. The fridge is empty. You can see a closed oven in the room. You can see a table. But there is nothing on it. You can see a counter. You see a cookbook on the counter. You see a stove. But there is nothing on it.\n\n\n",
+      "reasoning": "I need to check the cookbook for a recipe to cook a meal, as it is essential for determining what ingredients and cooking methods I need to use.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  block of cheese\n\nDirections:\n  slice the block of cheese\n  roast the block of cheese\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 1915,
+      "tokens_prompt": 1866,
+      "tokens_completion": 49
+    },
+    {
+      "step": 2,
+      "action": "cook sliced block of cheese with oven",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  block of cheese\n\nDirections:\n  slice the block of cheese\n  roast the block of cheese\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to roast the sliced block of cheese as per the recipe directions to complete the meal preparation.",
+      "feedback_after_action": "You roasted the block of cheese.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2200,
+      "tokens_prompt": 2154,
+      "tokens_completion": 46
+    },
+    {
+      "step": 3,
+      "action": "prepare meal",
+      "observation_before": "You roasted the block of cheese.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have roasted the block of cheese, and now I need to prepare the meal as the final step according to the recipe directions.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 2345,
+      "tokens_prompt": 2304,
+      "tokens_completion": 41
+    },
+    {
+      "step": 4,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have prepared the meal, and now I can eat it to satisfy my hunger and complete the game goal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 3 out of a possible 3, in 5 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 6,
+      "tokens_total": 2474,
+      "tokens_prompt": 2436,
+      "tokens_completion": 38
+    }
+  ],
+  "total_tokens": 8934,
+  "prompt_tokens": 8760,
+  "completion_tokens": 174,
+  "avg_tokens_per_step": 1786.8
+}

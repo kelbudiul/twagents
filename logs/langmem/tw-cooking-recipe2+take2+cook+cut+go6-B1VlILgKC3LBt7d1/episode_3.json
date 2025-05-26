@@ -1,0 +1,142 @@
+{
+  "episode": 3,
+  "game": "tw-cooking-recipe2+take2+cook+cut+go6-B1VlILgKC3LBt7d1",
+  "difficulty": "challenging",
+  "model_temperature": 0.3,
+  "max_steps": 35,
+  "agent": "langmem",
+  "duration_seconds": 94.21,
+  "moves": 9,
+  "max_score": 6,
+  "won": true,
+  "lost": false,
+  "score": 25,
+  "steps_taken": 11,
+  "trace": [
+    {
+      "step": 1,
+      "action": "go south",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Livingroom =-\nYou've just walked into a livingroom.\n\nYou can see a sofa. But there is nothing on it.\n\nThere is an exit to the south. You don't like doors? Why not try going west, that entranceway is not blocked by one.\n",
+      "reasoning": "I need to find the kitchen to check the cookbook for a recipe, so I will go south as it is the only exit available.",
+      "feedback_after_action": "\n-= Kitchen =-\nYou've entered a kitchen.\n\nYou see an opened fridge in the room. The fridge contains a red onion. You see an oven. You see a table. On the table you can see a knife. You can see a counter. On the counter you see a yellow apple, a raw purple potato, a raw red potato, a yellow onion, a red apple and a cookbook. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading west. There is an exit to the east. Don't worry, there is no door. There is an exit to the north.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2187,
+      "tokens_prompt": 2144,
+      "tokens_completion": 43
+    },
+    {
+      "step": 2,
+      "action": "take cookbook",
+      "observation_before": "\n-= Kitchen =-\nYou've entered a kitchen.\n\nYou see an opened fridge in the room. The fridge contains a red onion. You see an oven. You see a table. On the table you can see a knife. You can see a counter. On the counter you see a yellow apple, a raw purple potato, a raw red potato, a yellow onion, a red apple and a cookbook. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading west. There is an exit to the east. Don't worry, there is no door. There is an exit to the north.\n\n\n",
+      "reasoning": "I need to check the cookbook for a recipe, so I will take it from the counter.",
+      "feedback_after_action": "You take the cookbook from the counter.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2099,
+      "tokens_prompt": 2063,
+      "tokens_completion": 36
+    },
+    {
+      "step": 3,
+      "action": "examine cookbook",
+      "observation_before": "You take the cookbook from the counter.\n\n\n",
+      "reasoning": "I need to check the cookbook for a recipe to cook a meal, so I will examine it now.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  purple potato\n  yellow apple\n\nDirections:\n  chop the purple potato\n  roast the purple potato\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2091,
+      "tokens_prompt": 2051,
+      "tokens_completion": 40
+    },
+    {
+      "step": 4,
+      "action": "take yellow apple",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  purple potato\n  yellow apple\n\nDirections:\n  chop the purple potato\n  roast the purple potato\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to gather the ingredients for the recipe, so I will take the purple potato from the counter.",
+      "feedback_after_action": "You take the yellow apple from the counter.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2377,
+      "tokens_prompt": 2283,
+      "tokens_completion": 94
+    },
+    {
+      "step": 5,
+      "action": "take purple potato",
+      "observation_before": "You take the yellow apple from the counter.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to gather the purple potato for the recipe, so I will take it from the counter.",
+      "feedback_after_action": "You take the purple potato from the counter.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 2466,
+      "tokens_prompt": 2429,
+      "tokens_completion": 37
+    },
+    {
+      "step": 6,
+      "action": "chop purple potato with knife",
+      "observation_before": "You take the purple potato from the counter.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to chop the purple potato as per the recipe directions, so I will use the knife to chop it.",
+      "feedback_after_action": "You need to take the knife first.\n\n",
+      "score_count": 5,
+      "tokens_total": 2613,
+      "tokens_prompt": 2563,
+      "tokens_completion": 50
+    },
+    {
+      "step": 7,
+      "action": "take knife",
+      "observation_before": "You need to take the knife first.\n\n",
+      "reasoning": "I need to use the knife to chop the purple potato, so I will take the knife from the table.",
+      "feedback_after_action": "You take the knife from the table.\n\n\n",
+      "score_count": 7,
+      "tokens_total": 2724,
+      "tokens_prompt": 2686,
+      "tokens_completion": 38
+    },
+    {
+      "step": 8,
+      "action": "chop purple potato with knife",
+      "observation_before": "You take the knife from the table.\n\n\n",
+      "reasoning": "I have the knife now, so I can chop the purple potato as per the recipe directions.",
+      "feedback_after_action": "You chop the purple potato.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 10,
+      "tokens_total": 2856,
+      "tokens_prompt": 2810,
+      "tokens_completion": 46
+    },
+    {
+      "step": 9,
+      "action": "cook chopped raw purple potato with oven",
+      "observation_before": "You chop the purple potato.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to roast the chopped purple potato as per the recipe directions, so I will use the oven to roast it.",
+      "feedback_after_action": "You roasted the purple potato.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 14,
+      "tokens_total": 3011,
+      "tokens_prompt": 2961,
+      "tokens_completion": 50
+    },
+    {
+      "step": 10,
+      "action": "prepare meal",
+      "observation_before": "You roasted the purple potato.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have roasted the purple potato and I also have a yellow apple, so I can prepare the meal as per the recipe directions.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 19,
+      "tokens_total": 3149,
+      "tokens_prompt": 3108,
+      "tokens_completion": 41
+    },
+    {
+      "step": 11,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have prepared the meal, so now I will eat it to complete the goal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 6 out of a possible 6, in 12 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 25,
+      "tokens_total": 3264,
+      "tokens_prompt": 3231,
+      "tokens_completion": 33
+    }
+  ],
+  "total_tokens": 28837,
+  "prompt_tokens": 28329,
+  "completion_tokens": 508,
+  "avg_tokens_per_step": 2403.08
+}

@@ -1,0 +1,153 @@
+{
+  "episode": 1,
+  "game": "tw-cooking-recipe3+take3+cook+cut-bRoRtWeZho95hq8o",
+  "difficulty": "challenging",
+  "model_temperature": 0.3,
+  "max_steps": 35,
+  "agent": "retrieval",
+  "duration_seconds": 25.48,
+  "moves": 11,
+  "max_score": 10,
+  "won": true,
+  "lost": false,
+  "score": 55,
+  "steps_taken": 12,
+  "trace": [
+    {
+      "step": 1,
+      "action": "take knife",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou see an opened fridge close by. The fridge contains a green bell pepper, a raw red tuna, a green apple, a red hot pepper, a raw chicken leg and a black pepper. You see an oven. You see a table. On the table you see a cookbook and a knife. You see a counter. On the counter you can see a banana and a red apple. You see a stove. But there is nothing on it.\n\n\n",
+      "reasoning": "I need to take the knife from the table in order to dice the banana as per the recipe instructions.",
+      "feedback_after_action": "You take the knife from the table.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2767,
+      "tokens_prompt": 2730,
+      "tokens_completion": 37
+    },
+    {
+      "step": 2,
+      "action": "dice banana with knife",
+      "observation_before": "You take the knife from the table.\n\n\n",
+      "reasoning": "Now that I have the knife, I will dice the banana as it is a required step in the recipe.",
+      "feedback_after_action": "You need to take the banana first.\n\n",
+      "score_count": 0,
+      "tokens_total": 2189,
+      "tokens_prompt": 2142,
+      "tokens_completion": 47
+    },
+    {
+      "step": 3,
+      "action": "take banana",
+      "observation_before": "You need to take the banana first.\n\n",
+      "reasoning": "I need to take the banana from the counter before I can dice it, as it is a required step in the recipe.",
+      "feedback_after_action": "You take the banana from the counter.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 1801,
+      "tokens_prompt": 1760,
+      "tokens_completion": 41
+    },
+    {
+      "step": 4,
+      "action": "dice banana with knife",
+      "observation_before": "You take the banana from the counter.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "Now that I have the banana, I will dice it using the knife, as this is the next step in the recipe.",
+      "feedback_after_action": "You dice the banana.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 1913,
+      "tokens_prompt": 1863,
+      "tokens_completion": 50
+    },
+    {
+      "step": 5,
+      "action": "take green bell pepper",
+      "observation_before": "You dice the banana.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to take the green bell pepper from the counter as it is another required ingredient for the meal.",
+      "feedback_after_action": "You take the green bell pepper from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 6,
+      "tokens_total": 1977,
+      "tokens_prompt": 1938,
+      "tokens_completion": 39
+    },
+    {
+      "step": 6,
+      "action": "chop green bell pepper with knife",
+      "observation_before": "You take the green bell pepper from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to chop the green bell pepper before cooking it, as this is the next step in the recipe.",
+      "feedback_after_action": "You chop the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 10,
+      "tokens_total": 2107,
+      "tokens_prompt": 2057,
+      "tokens_completion": 50
+    },
+    {
+      "step": 7,
+      "action": "cook chopped green bell pepper with stove",
+      "observation_before": "You chop the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to fry the chopped green bell pepper using the stove, as this is the next step in the recipe and aligns with my previous successful actions.",
+      "feedback_after_action": "You fried the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 15,
+      "tokens_total": 2198,
+      "tokens_prompt": 2141,
+      "tokens_completion": 57
+    },
+    {
+      "step": 8,
+      "action": "take red tuna",
+      "observation_before": "You fried the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to take the red tuna from the fridge as it is another required ingredient for the meal.",
+      "feedback_after_action": "You take the red tuna from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 21,
+      "tokens_total": 2275,
+      "tokens_prompt": 2238,
+      "tokens_completion": 37
+    },
+    {
+      "step": 9,
+      "action": "chop red tuna with knife",
+      "observation_before": "You take the red tuna from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to chop the red tuna before cooking it, as this is the next step in the recipe and aligns with my previous successful actions.",
+      "feedback_after_action": "You chop the red tuna.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 28,
+      "tokens_total": 2357,
+      "tokens_prompt": 2302,
+      "tokens_completion": 55
+    },
+    {
+      "step": 10,
+      "action": "cook chopped red tuna with stove",
+      "observation_before": "You chop the red tuna.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to fry the chopped red tuna using the stove, as this is the next step in the recipe and aligns with my previous successful actions.",
+      "feedback_after_action": "You fried the red tuna.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 36,
+      "tokens_total": 2452,
+      "tokens_prompt": 2397,
+      "tokens_completion": 55
+    },
+    {
+      "step": 11,
+      "action": "prepare meal",
+      "observation_before": "You fried the red tuna.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have all the necessary ingredients prepared: chopped fried red tuna, chopped fried green bell pepper, and diced banana. It's time to assemble the meal and enjoy it.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 45,
+      "tokens_total": 2532,
+      "tokens_prompt": 2484,
+      "tokens_completion": 48
+    },
+    {
+      "step": 12,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have prepared the meal and added it to my inventory. Now, I will eat the meal to complete my goal of cooking and enjoying a delicious meal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 10 out of a possible 10, in 13 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 55,
+      "tokens_total": 2639,
+      "tokens_prompt": 2592,
+      "tokens_completion": 47
+    }
+  ],
+  "total_tokens": 27207,
+  "prompt_tokens": 26644,
+  "completion_tokens": 563,
+  "avg_tokens_per_step": 2092.85
+}

@@ -1,0 +1,65 @@
+{
+  "episode": 2,
+  "game": "tw-cooking-recipe2+take2+cook+cut+go9-XLg0fev2iK3gsXpX",
+  "difficulty": "very_hard",
+  "model_temperature": 0.3,
+  "max_steps": 45,
+  "agent": "retrieval",
+  "duration_seconds": 8.86,
+  "moves": 4,
+  "max_score": 6,
+  "won": false,
+  "lost": true,
+  "score": 6,
+  "steps_taken": 4,
+  "trace": [
+    {
+      "step": 1,
+      "action": "take yellow onion",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou can see a fridge. The fridge contains a yellow onion, a yellow apple, a red onion, a raw egg and a raw white tuna. You see a closed oven. You can see a table. On the table you see a knife. You can see a counter. On the counter you see a red apple, a banana and a cookbook. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading east. There is an open screen door leading west. There is an exit to the north. Don't worry, there is no door. There is an exit to the south. Don't worry, there is no door.\n",
+      "reasoning": "I need to gather the yellow onion from the fridge as it is one of the required ingredients for the recipe I found in the cookbook.",
+      "feedback_after_action": "You take the yellow onion from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 3586,
+      "tokens_prompt": 3542,
+      "tokens_completion": 44
+    },
+    {
+      "step": 2,
+      "action": "take knife",
+      "observation_before": "You take the yellow onion from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to take the knife from the table in order to dice the yellow onion, as I learned from previous episodes that I cannot cut without it.",
+      "feedback_after_action": "You take the knife from the table.\n\n\n",
+      "score_count": 2,
+      "tokens_total": 1764,
+      "tokens_prompt": 1718,
+      "tokens_completion": 46
+    },
+    {
+      "step": 3,
+      "action": "dice yellow onion with knife",
+      "observation_before": "You take the knife from the table.\n\n\n",
+      "reasoning": "Now that I have the knife, I can dice the yellow onion, which is a necessary step in preparing the meal according to the recipe I found.",
+      "feedback_after_action": "You dice the yellow onion.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 4,
+      "tokens_total": 1821,
+      "tokens_prompt": 1765,
+      "tokens_completion": 56
+    },
+    {
+      "step": 4,
+      "action": "cook diced yellow onion with stove",
+      "observation_before": "You dice the yellow onion.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to cook the diced yellow onion, and since I can't use the BBQ as per previous experiences, I will use the stove instead, which is the correct appliance for frying.",
+      "feedback_after_action": "You fried the yellow onion.\n\n\n\n                                                      *** You lost! ***\n\nYou scored 2 out of a possible 6, in 4 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 6,
+      "tokens_total": 1937,
+      "tokens_prompt": 1875,
+      "tokens_completion": 62
+    }
+  ],
+  "total_tokens": 9108,
+  "prompt_tokens": 8900,
+  "completion_tokens": 208,
+  "avg_tokens_per_step": 1821.6
+}

@@ -1,0 +1,142 @@
+{
+  "episode": 1,
+  "game": "tw-cooking-recipe3+cook+cut+go9-XQ2ZC7bEH2ZBtMyW",
+  "difficulty": "very_hard",
+  "model_temperature": 0.3,
+  "max_steps": 45,
+  "agent": "retrieval",
+  "duration_seconds": 26.97,
+  "moves": 7,
+  "max_score": 4,
+  "won": true,
+  "lost": false,
+  "score": 12,
+  "steps_taken": 11,
+  "trace": [
+    {
+      "step": 1,
+      "action": "cook banana with BBQ",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou see an opened fridge, which looks conventional, here. The fridge is empty. You can see a closed oven. You see a table. On the table you see a cookbook and a knife. You can see a counter. But there is nothing on it. You see a stove. But there is nothing on it.\n\nThere is an open plain door leading east. There is an open sliding patio door leading south. There is an exit to the west.\n",
+      "reasoning": "I need to grill the banana as per the recipe I found in the cookbook. Since I have the banana in my inventory, I will proceed to grill it using the BBQ.",
+      "feedback_after_action": "You can't see any such thing.\n",
+      "score_count": 0,
+      "tokens_total": 3202,
+      "tokens_prompt": 3144,
+      "tokens_completion": 58
+    },
+    {
+      "step": 2,
+      "action": "examine cookbook",
+      "observation_before": "You can't see any such thing.\n",
+      "reasoning": "Since I can't see any BBQ to cook the banana, I should check the cookbook on the table for a recipe or instructions that might help me understand what to do next or if there are alternative cooking methods for the ingredients I have.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  banana\n  purple potato\n  salt\n\nDirections:\n  grill the banana\n  fry the purple potato\n  prepare meal\n\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2369,
+      "tokens_prompt": 2304,
+      "tokens_completion": 65
+    },
+    {
+      "step": 3,
+      "action": "take purple potato",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  banana\n  purple potato\n  salt\n\nDirections:\n  grill the banana\n  fry the purple potato\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to fry the purple potato to complete the recipe. Since I have a raw purple potato in my inventory, I will take it to ensure I can cook it next.",
+      "feedback_after_action": "You already have that.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2603,
+      "tokens_prompt": 2551,
+      "tokens_completion": 52
+    },
+    {
+      "step": 4,
+      "action": "go south",
+      "observation_before": "You already have that.\n\n\n",
+      "reasoning": "Since I need to grill the banana and I can't do that in the kitchen, I should go to the backyard where I previously saw a closed BBQ. I need to check if I can open it to grill the banana.",
+      "feedback_after_action": "\n-= Backyard =-\nYou've just walked into a backyard.\n\nYou see a patio chair. But there is nothing on it. You see a patio table. But there is nothing on it. You can see a closed BBQ here.\n\nThere is an open sliding patio door leading north. There is an open wooden door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2638,
+      "tokens_prompt": 2578,
+      "tokens_completion": 60
+    },
+    {
+      "step": 5,
+      "action": "open BBQ",
+      "observation_before": "\n-= Backyard =-\nYou've just walked into a backyard.\n\nYou see a patio chair. But there is nothing on it. You see a patio table. But there is nothing on it. You can see a closed BBQ here.\n\nThere is an open sliding patio door leading north. There is an open wooden door leading west. You don't like doors? Why not try going south, that entranceway is not blocked by one.\n\n\n",
+      "reasoning": "I need to grill the banana, and the BBQ is closed. I will open the BBQ to proceed with grilling the banana as per the recipe instructions.",
+      "feedback_after_action": "You open the BBQ.\n\n",
+      "score_count": 0,
+      "tokens_total": 2529,
+      "tokens_prompt": 2482,
+      "tokens_completion": 47
+    },
+    {
+      "step": 6,
+      "action": "cook banana with BBQ",
+      "observation_before": "You open the BBQ.\n\n",
+      "reasoning": "Now that the BBQ is open, I can grill the banana. This is the next step in the recipe I found in the cookbook, and I have the banana in my inventory ready to be cooked.",
+      "feedback_after_action": "You grilled the banana.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2579,
+      "tokens_prompt": 2516,
+      "tokens_completion": 63
+    },
+    {
+      "step": 7,
+      "action": "cook purple potato with stove",
+      "observation_before": "You grilled the banana.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to fry the purple potato to complete the recipe. This is the next step after grilling the banana, and I have the purple potato in my inventory ready to be cooked.",
+      "feedback_after_action": "You can't see any such thing.\n",
+      "score_count": 2,
+      "tokens_total": 2298,
+      "tokens_prompt": 2238,
+      "tokens_completion": 60
+    },
+    {
+      "step": 8,
+      "action": "go north",
+      "observation_before": "You can't see any such thing.\n",
+      "reasoning": "Since I can't fry the purple potato at the moment, I should head back to the kitchen where the stove is located to see if I can fry the purple potato there. I will go north back to the kitchen.",
+      "feedback_after_action": "\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou see an opened fridge, which looks conventional, here. The fridge is empty. You can see a closed oven. You see a table. On the table you see a cookbook and a knife. You can see a counter. But there is nothing on it. You see a stove. But there is nothing on it.\n\nThere is an open plain door leading east. There is an open sliding patio door leading south. There is an exit to the west.\n\n\n",
+      "score_count": 3,
+      "tokens_total": 2994,
+      "tokens_prompt": 2935,
+      "tokens_completion": 59
+    },
+    {
+      "step": 9,
+      "action": "cook purple potato with stove",
+      "observation_before": "\n-= Kitchen =-\nYou're now in the kitchen.\n\nYou see an opened fridge, which looks conventional, here. The fridge is empty. You can see a closed oven. You see a table. On the table you see a cookbook and a knife. You can see a counter. But there is nothing on it. You see a stove. But there is nothing on it.\n\nThere is an open plain door leading east. There is an open sliding patio door leading south. There is an exit to the west.\n\n\n",
+      "reasoning": "I need to fry the purple potato, and I am currently in the kitchen where the stove is located. I will proceed to fry the purple potato now that I am back in the kitchen and can access the stove.",
+      "feedback_after_action": "You fried the purple potato.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 5,
+      "tokens_total": 3650,
+      "tokens_prompt": 3583,
+      "tokens_completion": 67
+    },
+    {
+      "step": 10,
+      "action": "prepare meal",
+      "observation_before": "You fried the purple potato.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have successfully grilled the banana and fried the purple potato, which are the required components of the meal according to the recipe. Now, I will assemble the meal using these cooked ingredients.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 8,
+      "tokens_total": 2874,
+      "tokens_prompt": 2822,
+      "tokens_completion": 52
+    },
+    {
+      "step": 11,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have successfully prepared the meal, which consists of the grilled banana and fried purple potato. Now, I will eat the meal to complete my goal of cooking and enjoying a delicious meal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 4 out of a possible 4, in 10 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 12,
+      "tokens_total": 2761,
+      "tokens_prompt": 2708,
+      "tokens_completion": 53
+    }
+  ],
+  "total_tokens": 30497,
+  "prompt_tokens": 29861,
+  "completion_tokens": 636,
+  "avg_tokens_per_step": 2541.42
+}

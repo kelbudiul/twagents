@@ -1,0 +1,87 @@
+{
+  "episode": 1,
+  "game": "tw-cooking-recipe1+take1+cut-W5NyHaWWHY2nh3Vj",
+  "difficulty": "easy",
+  "model_temperature": 0.3,
+  "max_steps": 20,
+  "agent": "retrieval",
+  "duration_seconds": 12.77,
+  "moves": 5,
+  "max_score": 4,
+  "won": false,
+  "lost": true,
+  "score": 8,
+  "steps_taken": 6,
+  "trace": [
+    {
+      "step": 1,
+      "action": "dice block of cheese with knife",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou're now in the kitchen.\n\nAn open fridge, which looks conventional, is in the room. The fridge contains a roasted block of cheese, a red onion and an orange bell pepper. You can see a closed oven in the room. You see a table. On the table you can see a knife. You see a counter. On the counter you see a green apple and a cookbook. You see a stove. But there is nothing on it.\n\n\n",
+      "reasoning": "I need to dice the block of cheese as per the recipe directions before roasting it. I have the knife and the cheese, so I will proceed to cut it.",
+      "feedback_after_action": "You need to take the block of cheese first.\n\n",
+      "score_count": 0,
+      "tokens_total": 2767,
+      "tokens_prompt": 2707,
+      "tokens_completion": 60
+    },
+    {
+      "step": 2,
+      "action": "take block of cheese",
+      "observation_before": "You need to take the block of cheese first.\n\n",
+      "reasoning": "I need to take the block of cheese from the fridge first before I can dice it, as per the recipe instructions. This is a necessary step to proceed with the cooking process.",
+      "feedback_after_action": "You take the block of cheese from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2339,
+      "tokens_prompt": 2285,
+      "tokens_completion": 54
+    },
+    {
+      "step": 3,
+      "action": "take knife",
+      "observation_before": "You take the block of cheese from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to take the knife from the table now that I have the block of cheese in my inventory. The knife is necessary to dice the cheese as per the recipe instructions.",
+      "feedback_after_action": "You take the knife from the table.\n\n\n",
+      "score_count": 2,
+      "tokens_total": 1979,
+      "tokens_prompt": 1928,
+      "tokens_completion": 51
+    },
+    {
+      "step": 4,
+      "action": "dice block of cheese with knife",
+      "observation_before": "You take the knife from the table.\n\n\n",
+      "reasoning": "Now that I have both the block of cheese and the knife, I can proceed to dice the cheese as per the recipe instructions. This is the next logical step in preparing my meal.",
+      "feedback_after_action": "You dice the block of cheese.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 4,
+      "tokens_total": 1980,
+      "tokens_prompt": 1916,
+      "tokens_completion": 64
+    },
+    {
+      "step": 5,
+      "action": "examine cookbook",
+      "observation_before": "You dice the block of cheese.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to check the cookbook in the kitchen for the recipe to know the next steps for cooking the meal. This is essential to ensure I follow the correct procedure and use the right ingredients.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  block of cheese\n\nDirections:\n  dice the block of cheese\n  roast the block of cheese\n  prepare meal\n\n\n\n",
+      "score_count": 6,
+      "tokens_total": 2064,
+      "tokens_prompt": 2007,
+      "tokens_completion": 57
+    },
+    {
+      "step": 6,
+      "action": "cook diced block of cheese with oven",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  block of cheese\n\nDirections:\n  dice the block of cheese\n  roast the block of cheese\n  prepare meal\n\n\n\n",
+      "reasoning": "Now that I have diced the block of cheese, the next step according to the recipe is to roast it. I will use the oven for this cooking process.",
+      "feedback_after_action": "You burned the block of cheese!\n\n\n\n                                                      *** You lost! ***\n\nYou scored 2 out of a possible 4, in 6 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 8,
+      "tokens_total": 2880,
+      "tokens_prompt": 2822,
+      "tokens_completion": 58
+    }
+  ],
+  "total_tokens": 14009,
+  "prompt_tokens": 13665,
+  "completion_tokens": 344,
+  "avg_tokens_per_step": 2001.29
+}

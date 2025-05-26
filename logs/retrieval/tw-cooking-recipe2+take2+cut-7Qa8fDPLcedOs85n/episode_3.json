@@ -1,0 +1,54 @@
+{
+  "episode": 3,
+  "game": "tw-cooking-recipe2+take2+cut-7Qa8fDPLcedOs85n",
+  "difficulty": "medium",
+  "model_temperature": 0.3,
+  "max_steps": 25,
+  "agent": "retrieval",
+  "duration_seconds": 7.26,
+  "moves": 2,
+  "max_score": 4,
+  "won": false,
+  "lost": true,
+  "score": 2,
+  "steps_taken": 3,
+  "trace": [
+    {
+      "step": 1,
+      "action": "cook chicken leg with stove",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Kitchen =-\nYou're now in a kitchen.\n\nYou can see a fridge. The fridge contains a roasted pork chop, a fried chicken leg and a raw chicken wing. You can see a closed oven. You can see a table. But there is nothing on it. You can see a counter. You see a cookbook and a knife on the counter. You see a stove. But there is nothing on it.\n\n\n",
+      "reasoning": "I need to fry the chicken leg as per the recipe instructions, and I have just taken the fried chicken leg from the fridge, which is already cooked. Therefore, I will use it as is without cooking it again.",
+      "feedback_after_action": "You need to take the chicken leg first.\n\n",
+      "score_count": 0,
+      "tokens_total": 3657,
+      "tokens_prompt": 3588,
+      "tokens_completion": 69
+    },
+    {
+      "step": 2,
+      "action": "take chicken leg",
+      "observation_before": "You need to take the chicken leg first.\n\n",
+      "reasoning": "I need to take the chicken leg from the fridge first before I can cook it, as it is a required ingredient for my meal.",
+      "feedback_after_action": "You take the chicken leg from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 1849,
+      "tokens_prompt": 1804,
+      "tokens_completion": 45
+    },
+    {
+      "step": 3,
+      "action": "cook chicken leg with stove",
+      "observation_before": "You take the chicken leg from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "Now that I have the chicken leg in my inventory, I will fry it using the stove as it is the correct cooking method for this ingredient.",
+      "feedback_after_action": "You burned the chicken leg!\n\n\n\n                                                      *** You lost! ***\n\nYou scored 1 out of a possible 4, in 3 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 2,
+      "tokens_total": 1893,
+      "tokens_prompt": 1839,
+      "tokens_completion": 54
+    }
+  ],
+  "total_tokens": 7399,
+  "prompt_tokens": 7231,
+  "completion_tokens": 168,
+  "avg_tokens_per_step": 1849.75
+}

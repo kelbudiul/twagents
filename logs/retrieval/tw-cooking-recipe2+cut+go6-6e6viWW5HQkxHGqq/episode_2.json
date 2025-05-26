@@ -1,0 +1,109 @@
+{
+  "episode": 2,
+  "game": "tw-cooking-recipe2+cut+go6-6e6viWW5HQkxHGqq",
+  "difficulty": "easy",
+  "model_temperature": 0.3,
+  "max_steps": 20,
+  "agent": "retrieval",
+  "duration_seconds": 19.15,
+  "moves": 6,
+  "max_score": 3,
+  "won": true,
+  "lost": false,
+  "score": 6,
+  "steps_taken": 8,
+  "trace": [
+    {
+      "step": 1,
+      "action": "examine cookbook",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Pantry =-\nYou're now in a pantry.\n\nYou see a shelf. But there is nothing on it.\n\nThere is an open frosted-glass door leading south.\n",
+      "reasoning": "I need to check the cookbook for a recipe to cook a delicious meal, as my goal is to prepare and eat a meal.",
+      "feedback_after_action": "You can't see any such thing.\n",
+      "score_count": 0,
+      "tokens_total": 3201,
+      "tokens_prompt": 3156,
+      "tokens_completion": 45
+    },
+    {
+      "step": 2,
+      "action": "go south",
+      "observation_before": "You can't see any such thing.\n",
+      "reasoning": "Since I can't find the cookbook in the pantry, I will move south to the kitchen where I previously saw the cookbook on the table. This is essential for finding a recipe to cook a meal.",
+      "feedback_after_action": "\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou can see an opened fridge. The fridge contains a raw pork chop, a red onion and a lettuce. You can see a closed oven in the room. You see a table. You see a cookbook on the table. You can see a counter. On the counter you can see a banana and a knife. You see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. You need an exit without a door? You should try going west.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2655,
+      "tokens_prompt": 2600,
+      "tokens_completion": 55
+    },
+    {
+      "step": 3,
+      "action": "take cookbook",
+      "observation_before": "\n-= Kitchen =-\nYou've just walked into a kitchen.\n\nYou can see an opened fridge. The fridge contains a raw pork chop, a red onion and a lettuce. You can see a closed oven in the room. You see a table. You see a cookbook on the table. You can see a counter. On the counter you can see a banana and a knife. You see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading north. You need an exit without a door? You should try going west.\n\n\n",
+      "reasoning": "I need to take the cookbook from the table to check for a recipe to cook a meal, as it is essential for my goal of preparing and eating a meal.",
+      "feedback_after_action": "You take the cookbook from the table.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2834,
+      "tokens_prompt": 2784,
+      "tokens_completion": 50
+    },
+    {
+      "step": 4,
+      "action": "dice green bell pepper with knife",
+      "observation_before": "You take the cookbook from the table.\n\n\n",
+      "reasoning": "I need to dice the green bell pepper as per the recipe in the cookbook, which is the first step in preparing the meal.",
+      "feedback_after_action": "You need to take the knife first.\n\n",
+      "score_count": 0,
+      "tokens_total": 2368,
+      "tokens_prompt": 2315,
+      "tokens_completion": 53
+    },
+    {
+      "step": 5,
+      "action": "take knife",
+      "observation_before": "You need to take the knife first.\n\n",
+      "reasoning": "I need to take the knife from the counter first before I can dice the green bell pepper as per the recipe in the cookbook.",
+      "feedback_after_action": "You take the knife from the counter.\n\n\n",
+      "score_count": 0,
+      "tokens_total": 2059,
+      "tokens_prompt": 2017,
+      "tokens_completion": 42
+    },
+    {
+      "step": 6,
+      "action": "dice green bell pepper with knife",
+      "observation_before": "You take the knife from the counter.\n\n\n",
+      "reasoning": "Now that I have the knife, I can dice the green bell pepper as per the recipe in the cookbook, which is essential for preparing the meal.",
+      "feedback_after_action": "You dice the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 2138,
+      "tokens_prompt": 2081,
+      "tokens_completion": 57
+    },
+    {
+      "step": 7,
+      "action": "prepare meal",
+      "observation_before": "You dice the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have successfully diced the green bell pepper, and based on previous successful episodes, I should now prepare the meal with the ingredients I have in my inventory. This will help me achieve my goal of cooking and eating a delicious meal.",
+      "feedback_after_action": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 3,
+      "tokens_total": 2303,
+      "tokens_prompt": 2242,
+      "tokens_completion": 61
+    },
+    {
+      "step": 8,
+      "action": "eat meal",
+      "observation_before": "Adding the meal to your inventory.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I have successfully prepared the meal and based on previous successful episodes, I should now eat the meal to complete my goal of cooking and enjoying a delicious meal.",
+      "feedback_after_action": "You eat the meal. Not bad.\n\n\nYour score has just gone up by one point.\n\n\n                                                       *** The End ***\n\nYou scored 3 out of a possible 3, in 8 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 6,
+      "tokens_total": 2475,
+      "tokens_prompt": 2428,
+      "tokens_completion": 47
+    }
+  ],
+  "total_tokens": 20033,
+  "prompt_tokens": 19623,
+  "completion_tokens": 410,
+  "avg_tokens_per_step": 2225.89
+}

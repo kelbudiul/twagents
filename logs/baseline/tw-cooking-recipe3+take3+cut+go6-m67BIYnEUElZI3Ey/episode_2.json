@@ -1,0 +1,131 @@
+{
+  "episode": 2,
+  "game": "tw-cooking-recipe3+take3+cut+go6-m67BIYnEUElZI3Ey",
+  "difficulty": "medium",
+  "model_temperature": 0.3,
+  "max_steps": 25,
+  "agent": "baseline",
+  "duration_seconds": 14.22,
+  "moves": 7,
+  "max_score": 6,
+  "won": false,
+  "lost": true,
+  "score": 17,
+  "steps_taken": 10,
+  "trace": [
+    {
+      "step": 1,
+      "action": "take vegetable oil",
+      "observation_before": "\n\n\n                    ________  ________  __    __  ________        \n                   |        \\|        \\|  \\  |  \\|        \\       \n                    \\$$$$$$$$| $$$$$$$$| $$  | $$ \\$$$$$$$$       \n                      | $$   | $$__     \\$$\\/  $$   | $$          \n                      | $$   | $$  \\     >$$  $$    | $$          \n                      | $$   | $$$$$    /  $$$$\\    | $$          \n                      | $$   | $$_____ |  $$ \\$$\\   | $$          \n                      | $$   | $$     \\| $$  | $$   | $$          \n                       \\$$    \\$$$$$$$$ \\$$   \\$$    \\$$          \n              __       __   ______   _______   __        _______  \n             |  \\  _  |  \\ /      \\ |       \\ |  \\      |       \\ \n             | $$ / \\ | $$|  $$$$$$\\| $$$$$$$\\| $$      | $$$$$$$\\\n             | $$/  $\\| $$| $$  | $$| $$__| $$| $$      | $$  | $$\n             | $$  $$$\\ $$| $$  | $$| $$    $$| $$      | $$  | $$\n             | $$ $$\\$$\\$$| $$  | $$| $$$$$$$\\| $$      | $$  | $$\n             | $$$$  \\$$$$| $$__/ $$| $$  | $$| $$_____ | $$__/ $$\n             | $$$    \\$$$ \\$$    $$| $$  | $$| $$     \\| $$    $$\n              \\$$      \\$$  \\$$$$$$  \\$$   \\$$ \\$$$$$$$$ \\$$$$$$$ \n\nYou are hungry! Let's cook a delicious meal. Check the cookbook in the kitchen for the recipe. Once done, enjoy your meal!\n\n-= Pantry =-\nYou're now in a pantry.\n\nYou see a shelf. You see some vegetable oil, a salt, a black pepper and some peanut oil on the shelf.\n\nThere is an open frosted-glass door leading north.\n",
+      "reasoning": "I need to gather ingredients to cook a meal, and vegetable oil is a common cooking ingredient that can be used in various recipes.",
+      "feedback_after_action": "You take the vegetable oil from the shelf.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 1,
+      "tokens_total": 1676,
+      "tokens_prompt": 1632,
+      "tokens_completion": 44
+    },
+    {
+      "step": 2,
+      "action": "examine cookbook",
+      "observation_before": "You take the vegetable oil from the shelf.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to find a recipe to cook a meal, and the cookbook in the kitchen should provide me with the necessary instructions and ingredients.",
+      "feedback_after_action": "You can't see any such thing.\n",
+      "score_count": 2,
+      "tokens_total": 1343,
+      "tokens_prompt": 1297,
+      "tokens_completion": 46
+    },
+    {
+      "step": 3,
+      "action": "go north",
+      "observation_before": "You can't see any such thing.\n",
+      "reasoning": "Since I can't find the cookbook in the kitchen, I should explore other areas to see if I can find it or any other useful items for cooking.",
+      "feedback_after_action": "\n-= Kitchen =-\nYou're now in a kitchen.\n\nYou see an opened fridge. The fridge contains a roasted green bell pepper, a green apple, an orange bell pepper, a raw red tuna and some water. You see a closed oven. You can see a table. On the table you see a cookbook and a knife. You see a counter. But there is nothing on it. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading south. There is an exit to the east. There is an exit to the west. Don't worry, there is no door.\n\n\n",
+      "score_count": 3,
+      "tokens_total": 1401,
+      "tokens_prompt": 1355,
+      "tokens_completion": 46
+    },
+    {
+      "step": 4,
+      "action": "take cookbook",
+      "observation_before": "\n-= Kitchen =-\nYou're now in a kitchen.\n\nYou see an opened fridge. The fridge contains a roasted green bell pepper, a green apple, an orange bell pepper, a raw red tuna and some water. You see a closed oven. You can see a table. On the table you see a cookbook and a knife. You see a counter. But there is nothing on it. You can see a stove. But there is nothing on it.\n\nThere is an open frosted-glass door leading south. There is an exit to the east. There is an exit to the west. Don't worry, there is no door.\n\n\n",
+      "reasoning": "The cookbook on the table will provide me with the necessary recipes and instructions for cooking a meal, which is essential for achieving my goal.",
+      "feedback_after_action": "You take the cookbook from the table.\n\n\n",
+      "score_count": 4,
+      "tokens_total": 1705,
+      "tokens_prompt": 1661,
+      "tokens_completion": 44
+    },
+    {
+      "step": 5,
+      "action": "examine cookbook",
+      "observation_before": "You take the cookbook from the table.\n\n\n",
+      "reasoning": "Now that I have the cookbook, I should examine it to find a recipe that I can use with the ingredients I have, specifically the vegetable oil and any other ingredients I can gather from the kitchen.",
+      "feedback_after_action": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  green bell pepper\n  salt\n  vegetable oil\n\nDirections:\n  chop the green bell pepper\n  roast the green bell pepper\n  prepare meal\n\n\n\n",
+      "score_count": 5,
+      "tokens_total": 1672,
+      "tokens_prompt": 1613,
+      "tokens_completion": 59
+    },
+    {
+      "step": 6,
+      "action": "take green bell pepper",
+      "observation_before": "You open the copy of \"Cooking: A Modern Approach (3rd Ed.)\" and start reading:\n\nRecipe #1\n---------\nGather all following ingredients and follow the directions to prepare this tasty meal.\n\nIngredients:\n  green bell pepper\n  salt\n  vegetable oil\n\nDirections:\n  chop the green bell pepper\n  roast the green bell pepper\n  prepare meal\n\n\n\n",
+      "reasoning": "I need to gather the green bell pepper from the fridge as it is one of the required ingredients for the recipe I found in the cookbook.",
+      "feedback_after_action": "You take the green bell pepper from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 7,
+      "tokens_total": 1875,
+      "tokens_prompt": 1829,
+      "tokens_completion": 46
+    },
+    {
+      "step": 7,
+      "action": "chop green bell pepper with knife",
+      "observation_before": "You take the green bell pepper from the fridge.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "I need to chop the green bell pepper as the first step in the recipe I found. I will use the knife I saw on the table for this task.",
+      "feedback_after_action": "You need to take the knife first.\n\n",
+      "score_count": 9,
+      "tokens_total": 1924,
+      "tokens_prompt": 1864,
+      "tokens_completion": 60
+    },
+    {
+      "step": 8,
+      "action": "take knife",
+      "observation_before": "You need to take the knife first.\n\n",
+      "reasoning": "I need to take the knife from the table in order to chop the green bell pepper for the recipe I found in the cookbook.",
+      "feedback_after_action": "You take the knife from the table.\n\n\n",
+      "score_count": 11,
+      "tokens_total": 1982,
+      "tokens_prompt": 1940,
+      "tokens_completion": 42
+    },
+    {
+      "step": 9,
+      "action": "chop green bell pepper with knife",
+      "observation_before": "You take the knife from the table.\n\n\n",
+      "reasoning": "Now that I have the knife, I can chop the green bell pepper as required by the recipe I found in the cookbook.",
+      "feedback_after_action": "You chop the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "score_count": 14,
+      "tokens_total": 2061,
+      "tokens_prompt": 2008,
+      "tokens_completion": 53
+    },
+    {
+      "step": 10,
+      "action": "cook chopped green bell pepper with oven",
+      "observation_before": "You chop the green bell pepper.\n\n\n\nYour score has just gone up by one point.\n",
+      "reasoning": "The next step in the recipe is to roast the chopped green bell pepper. I will use the oven for this cooking process.",
+      "feedback_after_action": "You burned the green bell pepper!\n\n\n\n                                                      *** You lost! ***\n\nYou scored 3 out of a possible 6, in 9 turns.\n\n\nWould you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?",
+      "score_count": 17,
+      "tokens_total": 2159,
+      "tokens_prompt": 2108,
+      "tokens_completion": 51
+    }
+  ],
+  "total_tokens": 17798,
+  "prompt_tokens": 17307,
+  "completion_tokens": 491,
+  "avg_tokens_per_step": 1618.0
+}
